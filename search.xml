@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>test</title>
+    <url>/2021/01/04/test/</url>
+    <content><![CDATA[<h1 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h1><h2 id="第一节"><a href="#第一节" class="headerlink" title="第一节"></a>第一节</h2><p>公式：$C_5^3$</p>
+<p><em>倾斜</em><br><strong>加粗</strong></p>
+<hr>
+<hr>
+]]></content>
+      <categories>
+        <category>test</category>
+      </categories>
+      <tags>
+        <tag>测试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>小技巧</title>
+    <url>/2021/01/04/%E5%B0%8F%E6%8A%80%E5%B7%A7/</url>
+    <content><![CDATA[<p>一些超级实用的小技巧 ，快来看看吧！</p>
+<a id="more"></a>
+<h1 id="1-hexo基本操作"><a href="#1-hexo基本操作" class="headerlink" title="1 hexo基本操作"></a>1 hexo基本操作</h1><p>新建文章<br><code>hexo new 文章名称</code><br>(或者)<br><code>hexo n 文章名称</code></p>
+<p>在线预览<br><code>hexo server</code><br>(或者)<br><code>hexo s</code></p>
+<p>一键部署<br><code>hexo deploy</code><br>(或者)<br><code>hexo d</code></p>
+<h1 id="2-百度文库复制操作"><a href="#2-百度文库复制操作" class="headerlink" title="2 百度文库复制操作"></a>2 百度文库复制操作</h1><p>F12——F1——debugged勾选——保持当前页面和网页进行复制</p>
+]]></content>
+      <tags>
+        <tag>实用</tag>
+      </tags>
+  </entry>
+</search>
