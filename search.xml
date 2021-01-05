@@ -16,6 +16,21 @@
       </tags>
   </entry>
   <entry>
+    <title>CFD计算中常见问题及解决方案</title>
+    <url>/2021/01/04/CFD%E8%AE%A1%E7%AE%97%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<h3 id="收敛问题"><a href="#收敛问题" class="headerlink" title="收敛问题"></a>收敛问题</h3><p>CFD计算可能最后残差不会达到要求而收敛，这时候结果不一定是错误的，需要在模型某点插入测量点，观察是否有物理参数的较大变化，如果保持长期稳定，可以认为结果可用。</p>
+<h3 id="网格划分问题"><a href="#网格划分问题" class="headerlink" title="网格划分问题"></a>网格划分问题</h3><p>网格划分严重影响计算正确性和可靠性，对于对流来说，边界的网格单元须小于边界层厚度，否则无法展示对流的特性。</p>
+<p>网格也不能完全密集，否则计算量巨大，精度的提升可能也有限，得不偿失。应该合理设置疏密得当的网格。</p>
+]]></content>
+      <categories>
+        <category>CFD相关</category>
+      </categories>
+      <tags>
+        <tag>CFD</tag>
+        <tag>常见问题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>小技巧</title>
     <url>/2021/01/04/%E5%B0%8F%E6%8A%80%E5%B7%A7/</url>
     <content><![CDATA[<p>一些超级实用的小技巧 ，快来看看吧！</p>
