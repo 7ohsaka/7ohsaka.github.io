@@ -16,6 +16,19 @@
       </tags>
   </entry>
   <entry>
+    <title>Word使用小技巧</title>
+    <url>/2021/01/06/Word%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</url>
+    <content><![CDATA[<h3 id="邮件合并功能"><a href="#邮件合并功能" class="headerlink" title="邮件合并功能"></a>邮件合并功能</h3><p>常常应用在批量发送邮件和准考证打印中。<br>如准考证，大部分区域是保持不变的，只是考号和姓名部分需要修改，如果人工逐个修改，工作量巨大，可以利用Word邮件功能完美解决。<br>参考<a href="https://jingyan.baidu.com/article/c33e3f48e29c1cea14cbb56f.html">word2016如何使用邮件合并功能？</a></p>
+]]></content>
+      <categories>
+        <category>计算机技术</category>
+      </categories>
+      <tags>
+        <tag>小技巧</tag>
+        <tag>骚操作</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Excel使用小技巧</title>
     <url>/2021/01/06/Excel%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</url>
     <content><![CDATA[<h3 id="SUMIF函数"><a href="#SUMIF函数" class="headerlink" title="SUMIF函数"></a>SUMIF函数</h3><p>常用于统计区域中符合条件的个体进行求和。<br>在 <a href="http://www.excelhome.net/lesson/article/excel/1744.html">SUMIF函数14种经典用法，速收！</a> 中收录全面，可以直接参考。</p>
@@ -28,19 +41,8 @@
         <category>计算机技术</category>
       </categories>
       <tags>
-        <tag>-小技巧  -骚操作</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Word使用小技巧</title>
-    <url>/2021/01/06/Word%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</url>
-    <content><![CDATA[<h3 id="邮件合并功能"><a href="#邮件合并功能" class="headerlink" title="邮件合并功能"></a>邮件合并功能</h3><p>常常应用在批量发送邮件和准考证打印中。<br>如准考证，大部分区域是保持不变的，只是考号和姓名部分需要修改，如果人工逐个修改，工作量巨大，可以利用Word邮件功能完美解决。<br>参考<a href="https://jingyan.baidu.com/article/c33e3f48e29c1cea14cbb56f.html">word2016如何使用邮件合并功能？</a></p>
-]]></content>
-      <categories>
-        <category>计算机技术</category>
-      </categories>
-      <tags>
-        <tag>-小技巧  -骚操作</tag>
+        <tag>小技巧</tag>
+        <tag>骚操作</tag>
       </tags>
   </entry>
   <entry>
