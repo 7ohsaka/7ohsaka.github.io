@@ -22,20 +22,20 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="一些超级实用的小技巧 ，快来看看吧！">
+  <meta name="description" content="本例参考文献为《Combined Simulation of Airflow, Radiation and Moisture Transport for Heat Release from Human Body》 几何建模如图所示,房间中心有一个人，房间对侧各有一个开口，下口速度进气，上口速度出气。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="小技巧">
-<meta property="og:url" content="http://example.com/2021/01/04/%E5%B0%8F%E6%8A%80%E5%B7%A7/index.html">
+<meta property="og:title" content="CFD计算实例1——人体热羽流">
+<meta property="og:url" content="http://example.com/2021/01/07/CFD%E8%AE%A1%E7%AE%97%E5%AE%9E%E4%BE%8B1%E2%80%94%E2%80%94%E4%BA%BA%E4%BD%93%E7%83%AD%E7%BE%BD%E6%B5%81/index.html">
 <meta property="og:site_name" content="Zachary&#39;s Blog">
-<meta property="og:description" content="一些超级实用的小技巧 ，快来看看吧！">
+<meta property="og:description" content="本例参考文献为《Combined Simulation of Airflow, Radiation and Moisture Transport for Heat Release from Human Body》 几何建模如图所示,房间中心有一个人，房间对侧各有一个开口，下口速度进气，上口速度出气。">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-01-04T14:28:39.000Z">
-<meta property="article:modified_time" content="2021-01-04T14:35:46.664Z">
+<meta property="article:published_time" content="2021-01-07T15:03:21.000Z">
+<meta property="article:modified_time" content="2021-01-09T08:15:25.472Z">
 <meta property="article:author" content="Zachary">
-<meta property="article:tag" content="实用">
+<meta property="article:tag" content="CFD">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2021/01/04/%E5%B0%8F%E6%8A%80%E5%B7%A7/">
+<link rel="canonical" href="http://example.com/2021/01/07/CFD%E8%AE%A1%E7%AE%97%E5%AE%9E%E4%BE%8B1%E2%80%94%E2%80%94%E4%BA%BA%E4%BD%93%E7%83%AD%E7%BE%BD%E6%B5%81/">
 
 
 <script id="page-configurations">
@@ -48,7 +48,7 @@
   };
 </script>
 
-  <title>小技巧 | Zachary's Blog</title>
+  <title>CFD计算实例1——人体热羽流 | Zachary's Blog</title>
   
 
 
@@ -200,7 +200,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/04/%E5%B0%8F%E6%8A%80%E5%B7%A7/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/07/CFD%E8%AE%A1%E7%AE%97%E5%AE%9E%E4%BE%8B1%E2%80%94%E2%80%94%E4%BA%BA%E4%BD%93%E7%83%AD%E7%BE%BD%E6%B5%81/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -213,7 +213,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          小技巧
+          CFD计算实例1——人体热羽流
         </h1>
 
         <div class="post-meta">
@@ -222,9 +222,24 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2021-01-04 22:28:39 / Modified: 22:35:46" itemprop="dateCreated datePublished" datetime="2021-01-04T22:28:39+08:00">2021-01-04</time>
+              <time title="Created: 2021-01-07 23:03:21" itemprop="dateCreated datePublished" datetime="2021-01-07T23:03:21+08:00">2021-01-07</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-01-09 16:15:25" itemprop="dateModified" datetime="2021-01-09T16:15:25+08:00">2021-01-09</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/CFD%E7%9B%B8%E5%85%B3/" itemprop="url" rel="index"><span itemprop="name">CFD相关</span></a>
+                </span>
             </span>
 
           
@@ -238,11 +253,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>一些超级实用的小技巧 ，快来看看吧！<br><a id="more"></a></p>
-<h1 id="1-hexo基本操作"><a href="#1-hexo基本操作" class="headerlink" title="1 hexo基本操作"></a>1 hexo基本操作</h1><p>新建文章<br><code>hexo new 文章名称</code><br>(或者)<br><code>hexo n 文章名称</code></p>
-<p>在线预览<br><code>hexo server</code><br>(或者)<br><code>hexo s</code></p>
-<p>一键部署<br><code>hexo deploy</code><br>(或者)<br><code>hexo d</code></p>
-<h1 id="2-百度文库复制操作"><a href="#2-百度文库复制操作" class="headerlink" title="2 百度文库复制操作"></a>2 百度文库复制操作</h1><p>F12——F1——debugged勾选——保持当前页面和网页进行复制</p>
+        <p>本例参考文献为《Combined Simulation of Airflow, Radiation and Moisture Transport for Heat Release from Human Body》</p>
+<h3 id="几何建模"><a href="#几何建模" class="headerlink" title="几何建模"></a>几何建模</h3><p>如图所示,房间中心有一个人，房间对侧各有一个开口，下口速度进气，上口速度出气。</p>
 
     </div>
 
@@ -272,7 +284,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E5%AE%9E%E7%94%A8/" rel="tag"># 实用</a>
+              <a href="/tags/CFD/" rel="tag"># CFD</a>
           </div>
 
         
@@ -281,12 +293,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021/01/04/CFD%E8%AE%A1%E7%AE%97%E6%80%BB%E7%BB%93/" rel="prev" title="CFD计算中常见问题及解决方案">
-      <i class="fa fa-chevron-left"></i> CFD计算中常见问题及解决方案
+    <a href="/2021/01/06/Word%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/" rel="prev" title="Word使用小技巧">
+      <i class="fa fa-chevron-left"></i> Word使用小技巧
     </a></div>
       <div class="post-nav-item">
-    <a href="/2021/01/06/Excel%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/" rel="next" title="Excel使用小技巧">
-      Excel使用小技巧 <i class="fa fa-chevron-right"></i>
+    <a href="/2021/01/07/CFD%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/" rel="next" title="CFD理论知识">
+      CFD理论知识 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -346,7 +358,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-hexo%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C"><span class="nav-number">1.</span> <span class="nav-text">1 hexo基本操作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-%E7%99%BE%E5%BA%A6%E6%96%87%E5%BA%93%E5%A4%8D%E5%88%B6%E6%93%8D%E4%BD%9C"><span class="nav-number">2.</span> <span class="nav-text">2 百度文库复制操作</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%A0%E4%BD%95%E5%BB%BA%E6%A8%A1"><span class="nav-number">1.</span> <span class="nav-text">几何建模</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
