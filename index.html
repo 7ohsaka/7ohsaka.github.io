@@ -194,6 +194,81 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/07/CFD%E8%AE%A1%E7%AE%97%E5%AE%9E%E4%BE%8B1%E2%80%94%E2%80%94%E4%BA%BA%E4%BD%93%E7%83%AD%E7%BE%BD%E6%B5%81/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Zachary">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Zachary's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/01/07/CFD%E8%AE%A1%E7%AE%97%E5%AE%9E%E4%BE%8B1%E2%80%94%E2%80%94%E4%BA%BA%E4%BD%93%E7%83%AD%E7%BE%BD%E6%B5%81/" class="post-title-link" itemprop="url">CFD计算实例1——人体热羽流</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2021-01-07 23:03:21" itemprop="dateCreated datePublished" datetime="2021-01-07T23:03:21+08:00">2021-01-07</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-01-09 16:15:25" itemprop="dateModified" datetime="2021-01-09T16:15:25+08:00">2021-01-09</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/CFD%E7%9B%B8%E5%85%B3/" itemprop="url" rel="index"><span itemprop="name">CFD相关</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>本例参考文献为《Combined Simulation of Airflow, Radiation and Moisture Transport for Heat Release from Human Body》</p>
+<h3 id="几何建模"><a href="#几何建模" class="headerlink" title="几何建模"></a>几何建模</h3><p>如图所示,房间中心有一个人，房间对侧各有一个开口，下口速度进气，上口速度出气。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/07/CFD%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -225,7 +300,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-01-10 21:00:23" itemprop="dateModified" datetime="2021-01-10T21:00:23+08:00">2021-01-10</time>
+                <time title="Modified: 2021-01-10 21:25:31" itemprop="dateModified" datetime="2021-01-10T21:25:31+08:00">2021-01-10</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -300,13 +375,14 @@
 </ol>
 <p>依次为：<strong>非稳态项</strong>、<strong>对流项</strong>、<strong>扩散项</strong>、<strong>源项</strong>。</p>
 <ol>
-<li>流场方程的压力修正解法（SIMPLE算法）<br>忽略邻居素的修正值的影响，因此成为<strong>半</strong>隐速度压力耦合法（<strong>Semi</strong>-Implicit Method for Pressure Linked Equations）<br>基本步骤如下图：</li>
+<li>流场方程的压力修正解法（SIMPLE算法）<br>忽略<strong>邻居速度的修正值</strong>的影响，因此成为<strong>半</strong>隐速度压力耦合法（<strong>Semi</strong>-Implicit Method for Pressure Linked Equations）<br>基本步骤如下图：</li>
 </ol>
 <p><img src="/2021/01/07/CFD%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/压力修正方法步骤.jpg" alt="avatar"></p>
 <p>松弛因子的引入可以改善计算SIMPLE算法</p>
 <ol>
-<li>衡量CFD模拟结果的可信度：误差、不确定性<br>误差种类：</li>
+<li>衡量CFD模拟结果的可信度：误差、不确定性</li>
 </ol>
+<p>误差种类：</p>
 <ul>
 <li>舍入误差</li>
 <li>离散化误差</li>
@@ -397,81 +473,6 @@
 <li>多相流——离散流</li>
 <li>动网格</li>
 </ol>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/07/CFD%E8%AE%A1%E7%AE%97%E5%AE%9E%E4%BE%8B1%E2%80%94%E2%80%94%E4%BA%BA%E4%BD%93%E7%83%AD%E7%BE%BD%E6%B5%81/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Zachary">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Zachary's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/01/07/CFD%E8%AE%A1%E7%AE%97%E5%AE%9E%E4%BE%8B1%E2%80%94%E2%80%94%E4%BA%BA%E4%BD%93%E7%83%AD%E7%BE%BD%E6%B5%81/" class="post-title-link" itemprop="url">CFD计算实例1——人体热羽流</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-01-07 23:03:21" itemprop="dateCreated datePublished" datetime="2021-01-07T23:03:21+08:00">2021-01-07</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-01-09 16:15:25" itemprop="dateModified" datetime="2021-01-09T16:15:25+08:00">2021-01-09</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/CFD%E7%9B%B8%E5%85%B3/" itemprop="url" rel="index"><span itemprop="name">CFD相关</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>本例参考文献为《Combined Simulation of Airflow, Radiation and Moisture Transport for Heat Release from Human Body》</p>
-<h3 id="几何建模"><a href="#几何建模" class="headerlink" title="几何建模"></a>几何建模</h3><p>如图所示,房间中心有一个人，房间对侧各有一个开口，下口速度进气，上口速度出气。</p>
 
       
     </div>
