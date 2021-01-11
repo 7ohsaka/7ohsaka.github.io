@@ -1,22 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>CFD计算实例1——人体热羽流</title>
-    <url>/2021/01/07/CFD%E8%AE%A1%E7%AE%97%E5%AE%9E%E4%BE%8B1%E2%80%94%E2%80%94%E4%BA%BA%E4%BD%93%E7%83%AD%E7%BE%BD%E6%B5%81/</url>
-    <content><![CDATA[<p>本例参考文献为《Combined Simulation of Airflow, Radiation and Moisture Transport for Heat Release from Human Body》</p>
-<h3 id="几何建模"><a href="#几何建模" class="headerlink" title="几何建模"></a>几何建模</h3><p>如图所示,房间中心有一个人，房间对侧各有一个开口，下口速度进气，上口速度出气。</p>
-]]></content>
-      <categories>
-        <category>CFD相关</category>
-      </categories>
-      <tags>
-        <tag>CFD</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>CFD理论知识</title>
     <url>/2021/01/07/CFD%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/</url>
-    <content><![CDATA[<p>针对CFD技术课程考试的理论知识点总结：</p>
+    <content><![CDATA[<p>针对CFD技术课程考试的理论知识点总结：<br><a id="more"></a></p>
 <h3 id="1-绪论"><a href="#1-绪论" class="headerlink" title="1 绪论"></a>1 绪论</h3><p>CFD定义：<br>即（Computational Fluid Dynamics），通过计算机数值模拟和可视化处理，对流体流动和传热等相关物理现象进行计算机数值分析和研究的一门学科。</p>
 <p>CFD基本原理：</p>
 <ol>
@@ -175,9 +162,22 @@
       </tags>
   </entry>
   <entry>
+    <title>CFD计算实例1——人体热羽流</title>
+    <url>/2021/01/07/CFD%E8%AE%A1%E7%AE%97%E5%AE%9E%E4%BE%8B1%E2%80%94%E2%80%94%E4%BA%BA%E4%BD%93%E7%83%AD%E7%BE%BD%E6%B5%81/</url>
+    <content><![CDATA[<p>本例参考文献为《Combined Simulation of Airflow, Radiation and Moisture Transport for Heat Release from Human Body》<br><a id="more"></a></p>
+<h3 id="几何建模"><a href="#几何建模" class="headerlink" title="几何建模"></a>几何建模</h3><p>如图所示,房间中心有一个人，房间对侧各有一个开口，下口速度进气，上口速度出气。</p>
+]]></content>
+      <categories>
+        <category>CFD相关</category>
+      </categories>
+      <tags>
+        <tag>CFD</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>CFD计算中常见问题及解决方案</title>
     <url>/2021/01/04/CFD%E8%AE%A1%E7%AE%97%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<h3 id="收敛问题"><a href="#收敛问题" class="headerlink" title="收敛问题"></a>收敛问题</h3><p>CFD计算可能最后残差不会达到要求而收敛，这时候结果不一定是错误的，需要在模型某点插入测量点，观察是否有物理参数的较大变化，如果保持长期稳定，可以认为结果可用。</p>
+    <content><![CDATA[<h3 id="收敛问题"><a href="#收敛问题" class="headerlink" title="收敛问题"></a>收敛问题</h3><p>CFD计算可能最后残差不会达到要求而收敛，这时候结果不一定是错误的，需要在模型某点插入测量点，观察是否有物理参数的较大变化，如果保持长期稳定，可以认为结果可用。<br><a id="more"></a></p>
 <h3 id="网格划分问题"><a href="#网格划分问题" class="headerlink" title="网格划分问题"></a>网格划分问题</h3><p>网格划分严重影响计算正确性和可靠性，对于对流来说，边界的网格单元须小于边界层厚度，否则无法展示对流的特性。</p>
 <p>网格也不能完全密集，否则计算量巨大，精度的提升可能也有限，得不偿失。应该合理设置疏密得当的网格。</p>
 ]]></content>
@@ -192,7 +192,7 @@
   <entry>
     <title>Excel使用小技巧</title>
     <url>/2021/01/06/Excel%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</url>
-    <content><![CDATA[<h3 id="SUMIF函数"><a href="#SUMIF函数" class="headerlink" title="SUMIF函数"></a>SUMIF函数</h3><p>常用于统计区域中符合条件的个体进行求和。<br>在 <a href="http://www.excelhome.net/lesson/article/excel/1744.html">SUMIF函数14种经典用法，速收！</a> 中收录全面，可以直接参考。</p>
+    <content><![CDATA[<h3 id="SUMIF函数"><a href="#SUMIF函数" class="headerlink" title="SUMIF函数"></a>SUMIF函数</h3><p>常用于统计区域中符合条件的个体进行求和。<br><a id="more"></a><br>在 <a href="http://www.excelhome.net/lesson/article/excel/1744.html">SUMIF函数14种经典用法，速收！</a> 中收录全面，可以直接参考。</p>
 <h3 id="VLOOKUP函数"><a href="#VLOOKUP函数" class="headerlink" title="VLOOKUP函数"></a>VLOOKUP函数</h3><p>常用于匹配对象。<br>实例：表A中有年级中所有同学的学号和联系方式，表B中有部分同学的学号，需要找到这些同学的电话填上，传统的查找方式一个一个过于缓慢，采用<strong>VLOOKUP函数</strong>效率大大提高。<br>参考<a href="https://zhidao.baidu.com/question/275650150.html">vlookup函数的使用方法</a>。</p>
 <blockquote>
 <p>注：与之对应的<strong>HLOOKUP函数</strong>是按行查找。</p>
@@ -209,7 +209,7 @@
   <entry>
     <title>Word使用小技巧</title>
     <url>/2021/01/06/Word%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</url>
-    <content><![CDATA[<h3 id="邮件合并功能"><a href="#邮件合并功能" class="headerlink" title="邮件合并功能"></a>邮件合并功能</h3><p>常常应用在批量发送邮件和准考证打印中。<br>如准考证，大部分区域是保持不变的，只是考号和姓名部分需要修改，如果人工逐个修改，工作量巨大，可以利用Word邮件功能完美解决。<br>参考<a href="https://jingyan.baidu.com/article/c33e3f48e29c1cea14cbb56f.html">word2016如何使用邮件合并功能？</a></p>
+    <content><![CDATA[<h3 id="邮件合并功能"><a href="#邮件合并功能" class="headerlink" title="邮件合并功能"></a>邮件合并功能</h3><p>常常应用在批量发送邮件和准考证打印中。<br><a id="more"></a><br>如准考证，大部分区域是保持不变的，只是考号和姓名部分需要修改，如果人工逐个修改，工作量巨大，可以利用Word邮件功能完美解决。<br>参考<a href="https://jingyan.baidu.com/article/c33e3f48e29c1cea14cbb56f.html">word2016如何使用邮件合并功能？</a></p>
 ]]></content>
       <categories>
         <category>计算机技术</category>

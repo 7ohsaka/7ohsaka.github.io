@@ -194,81 +194,6 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/07/CFD%E8%AE%A1%E7%AE%97%E5%AE%9E%E4%BE%8B1%E2%80%94%E2%80%94%E4%BA%BA%E4%BD%93%E7%83%AD%E7%BE%BD%E6%B5%81/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Zachary">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Zachary's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/01/07/CFD%E8%AE%A1%E7%AE%97%E5%AE%9E%E4%BE%8B1%E2%80%94%E2%80%94%E4%BA%BA%E4%BD%93%E7%83%AD%E7%BE%BD%E6%B5%81/" class="post-title-link" itemprop="url">CFD计算实例1——人体热羽流</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-01-07 23:03:21" itemprop="dateCreated datePublished" datetime="2021-01-07T23:03:21+08:00">2021-01-07</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-01-09 16:15:25" itemprop="dateModified" datetime="2021-01-09T16:15:25+08:00">2021-01-09</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/CFD%E7%9B%B8%E5%85%B3/" itemprop="url" rel="index"><span itemprop="name">CFD相关</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>本例参考文献为《Combined Simulation of Airflow, Radiation and Moisture Transport for Heat Release from Human Body》</p>
-<h3 id="几何建模"><a href="#几何建模" class="headerlink" title="几何建模"></a>几何建模</h3><p>如图所示,房间中心有一个人，房间对侧各有一个开口，下口速度进气，上口速度出气。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/07/CFD%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -300,7 +225,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-01-10 21:25:31" itemprop="dateModified" datetime="2021-01-10T21:25:31+08:00">2021-01-10</time>
+                <time title="Modified: 2021-01-11 18:28:29" itemprop="dateModified" datetime="2021-01-11T18:28:29+08:00">2021-01-11</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -323,157 +248,96 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>针对CFD技术课程考试的理论知识点总结：</p>
-<h3 id="1-绪论"><a href="#1-绪论" class="headerlink" title="1 绪论"></a>1 绪论</h3><p>CFD定义：<br>即（Computational Fluid Dynamics），通过计算机数值模拟和可视化处理，对流体流动和传热等相关物理现象进行计算机数值分析和研究的一门学科。</p>
-<p>CFD基本原理：</p>
-<ol>
-<li>质量守恒定律</li>
-<li>能量守恒定律</li>
-<li>牛顿第二定律<br>三个定律导出N-S方程（偏微分方程组），实际计算采用离散代数求解。</li>
-</ol>
-<p>CFD应用：</p>
-<ol>
-<li>作为设计工具</li>
-<li>作为研究工具，于实验、理论互补</li>
-</ol>
-<p>CFD主要过程：</p>
-<ol>
-<li>前处理：确定问题、流体参数、物质性质、生成网格</li>
-<li>建模计算：设置模型、计算</li>
-<li>后处理：可视化、评估模型准确性、计算特征参数</li>
-</ol>
-<p>CFD交叉学科：<br>流体力学、数值分析、计算机科学</p>
-<p>CFD优缺点：</p>
-<ol>
-<li>优点： 深入（展示流动细节）、预测（研究大量参数、极端条件可能情况）、高效（减少实验费用）</li>
-<li>缺点： 需要验证（各种模型、方法是否适用）、依赖计算者的经验和技巧</li>
-</ol>
-<h3 id="2-CFD分析完整流程"><a href="#2-CFD分析完整流程" class="headerlink" title="2 CFD分析完整流程"></a>2 CFD分析完整流程</h3><p>Fluent组件的使用：</p>
-<ol>
-<li>几何模型（DesignModeler）</li>
-<li>网格划分（Meshing）</li>
-<li>模型设置及计算（Fluent）</li>
-<li>后处理（CFX-post）</li>
-</ol>
-<h3 id="3-网格及网格划分"><a href="#3-网格及网格划分" class="headerlink" title="3 网格及网格划分"></a>3 网格及网格划分</h3><p>网格基本单元：</p>
-<ol>
-<li>2D：三角形、四边形</li>
-<li>3D：三棱锥、六面体等</li>
-</ol>
-<p>网格划分方法：</p>
-<ol>
-<li>非结构化网格<br>网络生成算法、定义全局网络参数。</li>
-<li>结构化网格<br>建立拓扑分块、建立拓扑结构和原几何体的映射、定义网络结点划分网格。</li>
-<li>比较：<br>结构网格质量高、计算精度高、划分难度大；<br>非结构网格灵活、计算误差来源比结构网络多、难以实现高阶离散格式。</li>
-</ol>
-<p>影响网络质量的参数：<br>正交性、长宽比、均匀性等等</p>
-<h3 id="4-流场数值求解方法"><a href="#4-流场数值求解方法" class="headerlink" title="4 流场数值求解方法"></a>4 流场数值求解方法</h3><ol>
-<li><p>采用N-S数学模型</p>
-</li>
-<li><p>有限体积法：通用标量守恒方程的解法<br>二维形式如下：<br><img src="/2021/01/07/CFD%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/标量守恒方程矢量.jpg" alt="avatar"></p>
-</li>
-</ol>
-<p>依次为：<strong>非稳态项</strong>、<strong>对流项</strong>、<strong>扩散项</strong>、<strong>源项</strong>。</p>
-<ol>
-<li>流场方程的压力修正解法（SIMPLE算法）<br>忽略<strong>邻居速度的修正值</strong>的影响，因此成为<strong>半</strong>隐速度压力耦合法（<strong>Semi</strong>-Implicit Method for Pressure Linked Equations）<br>基本步骤如下图：</li>
-</ol>
-<p><img src="/2021/01/07/CFD%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/压力修正方法步骤.jpg" alt="avatar"></p>
-<p>松弛因子的引入可以改善计算SIMPLE算法</p>
-<ol>
-<li>衡量CFD模拟结果的可信度：误差、不确定性</li>
-</ol>
-<p>误差种类：</p>
-<ul>
-<li>舍入误差</li>
-<li>离散化误差</li>
-<li>迭代收敛误差</li>
-</ul>
-<p><strong>应对</strong>：</p>
-<p>(1) 几何与网格</p>
-<ul>
-<li>CAD图尽可能简化</li>
-<li>对称条件可能限制结果</li>
-<li>入口和出口远离关心的区域</li>
-<li>确保边界处网格的正交性</li>
-<li>避免网格斜度过高</li>
-<li>分析网格质量:</li>
-<li>相邻网格尺寸比&lt;2</li>
-<li>网格长宽比&lt;5</li>
-<li>斜度大于45°</li>
-<li>结果对网格的依赖性</li>
-</ul>
-<p>(2) 提高计算收敛性及精度</p>
-<ul>
-<li>计算发散可能原因是不存在稳定解</li>
-<li>不同变量的收敛标准不同。温度和组份变量的收敛标准较高</li>
-<li>计算初始求解较少的变量，然后再增加变量</li>
-<li>对于高速可压缩流体、或网格特别细的，采用全耦合求解</li>
-</ul>
-<p>(3) 控制数值误差</p>
-<ul>
-<li>网格独立性</li>
-<li>使用双精度</li>
-<li>在一阶离散格式计算的基础上，再采用高阶离散格式</li>
-<li>对于非结构四面体网格，采用node -based gradients</li>
-<li>每个时间步长计算收敛的迭代数小于20</li>
-</ul>
-<p>不确定性种类：</p>
-<ul>
-<li>输入不确定性</li>
-<li>物理模型不确定性</li>
-</ul>
-<p><strong>应对</strong></p>
-<p>(1) 从一个收敛的结果开始，分析结果依赖于:网格尺寸</p>
-<p>(2) 边界条件:</p>
-<ul>
-<li>入口:速度、温度、组份的分布;入口湍流度?</li>
-<li>出口:充分发展?</li>
-<li>壁面:换热系数、绝热、定壁温?</li>
-</ul>
-<p>(3) 湍流模型:</p>
-<p>(4) 物性参数:包括流体的密度、粘度、导热系数、比热容等等。</p>
-<h3 id="5-流体力学典型现象的计算分析"><a href="#5-流体力学典型现象的计算分析" class="headerlink" title="5 流体力学典型现象的计算分析"></a>5 流体力学典型现象的计算分析</h3><h3 id="6-传热学典型问题计算分析"><a href="#6-传热学典型问题计算分析" class="headerlink" title="6 传热学典型问题计算分析"></a>6 传热学典型问题计算分析</h3><h3 id="7-湍流典型问题计算分析"><a href="#7-湍流典型问题计算分析" class="headerlink" title="7 湍流典型问题计算分析"></a>7 湍流典型问题计算分析</h3><ol>
-<li>湍流特征</li>
-</ol>
-<ul>
-<li><p>非稳态。<br>作图观察流场中某位置的速度随时间的变化曲线。</p>
-</li>
-<li><p>三维。<br>瞬时波动具有维特征。</p>
-</li>
-<li><p>包含很多涡(eddies) 。<br>涡的时间尺度和空间尺度分布非常广。</p>
-</li>
-<li><p>湍流强化流场搅动，强化物质混合。</p>
-</li>
-<li><p>湍流虽然包含随机特征，但是具有可以确定的拟序结构。</p>
-</li>
-<li><p>湍流运动仍然可以用N-S方程描述。</p>
-</li>
-</ul>
-<ol>
-<li>常用的湍流模型</li>
-</ol>
-<ul>
-<li>关联式方法(correlation)，如整理摩擦系数与Re的关系</li>
-<li>雷诺时均模型RANS(Reynolds-averaged Navier-Stokes)</li>
-<li>大涡模拟LES (Large eddy simulation)。</li>
-<li>直接模拟DNS (Direct numerical simulation)</li>
-</ul>
-<ol>
-<li><p>雷诺时均法进行湍流描述<br>将信号分解为时均值和脉动值：<br>$\phi=\overline{\phi}+{\phi}^{’}$<br>时间步长应该满足：远大于波动周期，远小于时均值变化周期。</p>
-</li>
-<li><p>雷诺应力<br>湍流剪切力，用于表征脉动引起的动量传递，称为雷诺应力。</p>
-</li>
-<li><p>湍流粘度<br><img src="/2021/01/07/CFD%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/湍流粘度.jpg" alt="avatar"></p>
-</li>
-</ol>
-<h3 id="8-可压缩流体的计算分析（高速运动）"><a href="#8-可压缩流体的计算分析（高速运动）" class="headerlink" title="8 可压缩流体的计算分析（高速运动）"></a>8 可压缩流体的计算分析（高速运动）</h3><h3 id="9-CFD专题应用"><a href="#9-CFD专题应用" class="headerlink" title="9 CFD专题应用"></a>9 CFD专题应用</h3><ol>
-<li>传热传质</li>
-<li>化学反应流</li>
-<li>多相流——流体界面</li>
-<li>多相流——离散流</li>
-<li>动网格</li>
-</ol>
+          <p>针对CFD技术课程考试的理论知识点总结：<br></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/01/07/CFD%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
 
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/07/CFD%E8%AE%A1%E7%AE%97%E5%AE%9E%E4%BE%8B1%E2%80%94%E2%80%94%E4%BA%BA%E4%BD%93%E7%83%AD%E7%BE%BD%E6%B5%81/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Zachary">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Zachary's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/01/07/CFD%E8%AE%A1%E7%AE%97%E5%AE%9E%E4%BE%8B1%E2%80%94%E2%80%94%E4%BA%BA%E4%BD%93%E7%83%AD%E7%BE%BD%E6%B5%81/" class="post-title-link" itemprop="url">CFD计算实例1——人体热羽流</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2021-01-07 23:03:21" itemprop="dateCreated datePublished" datetime="2021-01-07T23:03:21+08:00">2021-01-07</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-01-11 18:28:45" itemprop="dateModified" datetime="2021-01-11T18:28:45+08:00">2021-01-11</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/CFD%E7%9B%B8%E5%85%B3/" itemprop="url" rel="index"><span itemprop="name">CFD相关</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>本例参考文献为《Combined Simulation of Airflow, Radiation and Moisture Transport for Heat Release from Human Body》<br></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/01/07/CFD%E8%AE%A1%E7%AE%97%E5%AE%9E%E4%BE%8B1%E2%80%94%E2%80%94%E4%BA%BA%E4%BD%93%E7%83%AD%E7%BE%BD%E6%B5%81/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -515,10 +379,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2021-01-06 18:30:12 / Modified: 18:39:00" itemprop="dateCreated datePublished" datetime="2021-01-06T18:30:12+08:00">2021-01-06</time>
+              <time title="Created: 2021-01-06 18:30:12" itemprop="dateCreated datePublished" datetime="2021-01-06T18:30:12+08:00">2021-01-06</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-01-11 18:28:09" itemprop="dateModified" datetime="2021-01-11T18:28:09+08:00">2021-01-11</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -540,8 +410,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h3 id="邮件合并功能"><a href="#邮件合并功能" class="headerlink" title="邮件合并功能"></a>邮件合并功能</h3><p>常常应用在批量发送邮件和准考证打印中。<br>如准考证，大部分区域是保持不变的，只是考号和姓名部分需要修改，如果人工逐个修改，工作量巨大，可以利用Word邮件功能完美解决。<br>参考<a target="_blank" rel="noopener" href="https://jingyan.baidu.com/article/c33e3f48e29c1cea14cbb56f.html">word2016如何使用邮件合并功能？</a></p>
-
+          <h3 id="邮件合并功能"><a href="#邮件合并功能" class="headerlink" title="邮件合并功能"></a>邮件合并功能</h3><p>常常应用在批量发送邮件和准考证打印中。<br></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/01/06/Word%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -583,10 +460,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2021-01-06 18:14:09 / Modified: 18:38:50" itemprop="dateCreated datePublished" datetime="2021-01-06T18:14:09+08:00">2021-01-06</time>
+              <time title="Created: 2021-01-06 18:14:09" itemprop="dateCreated datePublished" datetime="2021-01-06T18:14:09+08:00">2021-01-06</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-01-11 18:28:20" itemprop="dateModified" datetime="2021-01-11T18:28:20+08:00">2021-01-11</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -608,12 +491,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h3 id="SUMIF函数"><a href="#SUMIF函数" class="headerlink" title="SUMIF函数"></a>SUMIF函数</h3><p>常用于统计区域中符合条件的个体进行求和。<br>在 <a target="_blank" rel="noopener" href="http://www.excelhome.net/lesson/article/excel/1744.html">SUMIF函数14种经典用法，速收！</a> 中收录全面，可以直接参考。</p>
-<h3 id="VLOOKUP函数"><a href="#VLOOKUP函数" class="headerlink" title="VLOOKUP函数"></a>VLOOKUP函数</h3><p>常用于匹配对象。<br>实例：表A中有年级中所有同学的学号和联系方式，表B中有部分同学的学号，需要找到这些同学的电话填上，传统的查找方式一个一个过于缓慢，采用<strong>VLOOKUP函数</strong>效率大大提高。<br>参考<a target="_blank" rel="noopener" href="https://zhidao.baidu.com/question/275650150.html">vlookup函数的使用方法</a>。</p>
-<blockquote>
-<p>注：与之对应的<strong>HLOOKUP函数</strong>是按行查找。</p>
-</blockquote>
-
+          <h3 id="SUMIF函数"><a href="#SUMIF函数" class="headerlink" title="SUMIF函数"></a>SUMIF函数</h3><p>常用于统计区域中符合条件的个体进行求和。<br></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/01/06/Excel%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -729,7 +615,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-01-05 19:59:32" itemprop="dateModified" datetime="2021-01-05T19:59:32+08:00">2021-01-05</time>
+                <time title="Modified: 2021-01-11 18:28:39" itemprop="dateModified" datetime="2021-01-11T18:28:39+08:00">2021-01-11</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -752,10 +638,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h3 id="收敛问题"><a href="#收敛问题" class="headerlink" title="收敛问题"></a>收敛问题</h3><p>CFD计算可能最后残差不会达到要求而收敛，这时候结果不一定是错误的，需要在模型某点插入测量点，观察是否有物理参数的较大变化，如果保持长期稳定，可以认为结果可用。</p>
-<h3 id="网格划分问题"><a href="#网格划分问题" class="headerlink" title="网格划分问题"></a>网格划分问题</h3><p>网格划分严重影响计算正确性和可靠性，对于对流来说，边界的网格单元须小于边界层厚度，否则无法展示对流的特性。</p>
-<p>网格也不能完全密集，否则计算量巨大，精度的提升可能也有限，得不偿失。应该合理设置疏密得当的网格。</p>
-
+          <h3 id="收敛问题"><a href="#收敛问题" class="headerlink" title="收敛问题"></a>收敛问题</h3><p>CFD计算可能最后残差不会达到要求而收敛，这时候结果不一定是错误的，需要在模型某点插入测量点，观察是否有物理参数的较大变化，如果保持长期稳定，可以认为结果可用。<br></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/01/04/CFD%E8%AE%A1%E7%AE%97%E6%80%BB%E7%BB%93/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
