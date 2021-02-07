@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>111</title>
+    <url>/2021/02/07/111/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>CFD理论知识</title>
     <url>/2021/01/07/CFD%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/</url>
     <content><![CDATA[<p>针对CFD技术课程考试的理论知识点总结：<br><a id="more"></a></p>
@@ -190,6 +195,23 @@
       </tags>
   </entry>
   <entry>
+    <title>Excel使用小技巧</title>
+    <url>/2021/01/06/Excel%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</url>
+    <content><![CDATA[<h3 id="SUMIF函数"><a href="#SUMIF函数" class="headerlink" title="SUMIF函数"></a>SUMIF函数</h3><p>常用于统计区域中符合条件的个体进行求和。<br><a id="more"></a><br>在 <a href="http://www.excelhome.net/lesson/article/excel/1744.html">SUMIF函数14种经典用法，速收！</a> 中收录全面，可以直接参考。</p>
+<h3 id="VLOOKUP函数"><a href="#VLOOKUP函数" class="headerlink" title="VLOOKUP函数"></a>VLOOKUP函数</h3><p>常用于匹配对象。<br>实例：表A中有年级中所有同学的学号和联系方式，表B中有部分同学的学号，需要找到这些同学的电话填上，传统的查找方式一个一个过于缓慢，采用<strong>VLOOKUP函数</strong>效率大大提高。<br>参考<a href="https://zhidao.baidu.com/question/275650150.html">vlookup函数的使用方法</a>。</p>
+<blockquote>
+<p>注：与之对应的<strong>HLOOKUP函数</strong>是按行查找。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>计算机技术</category>
+      </categories>
+      <tags>
+        <tag>小技巧</tag>
+        <tag>骚操作</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Word使用小技巧</title>
     <url>/2021/01/06/Word%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</url>
     <content><![CDATA[<h3 id="邮件合并功能"><a href="#邮件合并功能" class="headerlink" title="邮件合并功能"></a>邮件合并功能</h3><p>常常应用在批量发送邮件和准考证打印中。<br><a id="more"></a><br>如准考证，大部分区域是保持不变的，只是考号和姓名部分需要修改，如果人工逐个修改，工作量巨大，可以利用Word邮件功能完美解决。<br>参考<a href="https://jingyan.baidu.com/article/c33e3f48e29c1cea14cbb56f.html">word2016如何使用邮件合并功能？</a></p>
@@ -218,23 +240,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Excel使用小技巧</title>
-    <url>/2021/01/06/Excel%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</url>
-    <content><![CDATA[<h3 id="SUMIF函数"><a href="#SUMIF函数" class="headerlink" title="SUMIF函数"></a>SUMIF函数</h3><p>常用于统计区域中符合条件的个体进行求和。<br><a id="more"></a><br>在 <a href="http://www.excelhome.net/lesson/article/excel/1744.html">SUMIF函数14种经典用法，速收！</a> 中收录全面，可以直接参考。</p>
-<h3 id="VLOOKUP函数"><a href="#VLOOKUP函数" class="headerlink" title="VLOOKUP函数"></a>VLOOKUP函数</h3><p>常用于匹配对象。<br>实例：表A中有年级中所有同学的学号和联系方式，表B中有部分同学的学号，需要找到这些同学的电话填上，传统的查找方式一个一个过于缓慢，采用<strong>VLOOKUP函数</strong>效率大大提高。<br>参考<a href="https://zhidao.baidu.com/question/275650150.html">vlookup函数的使用方法</a>。</p>
-<blockquote>
-<p>注：与之对应的<strong>HLOOKUP函数</strong>是按行查找。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>计算机技术</category>
-      </categories>
-      <tags>
-        <tag>小技巧</tag>
-        <tag>骚操作</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>小技巧</title>
     <url>/2021/01/04/%E5%B0%8F%E6%8A%80%E5%B7%A7/</url>
     <content><![CDATA[<p>一些超级实用的小技巧 ，快来看看吧！<br><a id="more"></a></p>
@@ -245,6 +250,49 @@
 ]]></content>
       <tags>
         <tag>实用</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于INCAR的那些事</title>
+    <url>/2021/02/07/%E5%85%B3%E4%BA%8EINCAR%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/</url>
+    <content><![CDATA[<h1 id="关于INCAR的那些事"><a href="#关于INCAR的那些事" class="headerlink" title="关于INCAR的那些事"></a>关于INCAR的那些事</h1><p>INCAR、POSCAR、POTCAR、KPOINTS是vasp计算的四个输入文件。<br>我们这里单独把INCAR做一个总结，因为INCAR有特别容易出错且需要自己设置的变量相对是较多的。官网是如此描述INCAR的：</p>
+<blockquote>
+<p>The INCAR file is the central input file of VASP. It determines “what to do and how to do it”. There is a relatively large number of parameters that may be set by means of tags in the INCAR file. Most of these parameters have convenient defaults, and a user unaware of their meaning should not change any of the default values.</p>
+</blockquote>
+<p>同时给出了特别的提醒：<strong>Be very careful about the INCAR file, it is the main source of errors and false results!</strong></p>
+<p>一定要多查看官网手册：<a href="https://www.vasp.at/wiki/index.php/The_VASP_Manual">vasp手册</a></p>
+<h2 id="1-基本规则"><a href="#1-基本规则" class="headerlink" title="1 基本规则"></a>1 基本规则</h2><ul>
+<li>每行都由一个标签（tag）、“=”和一些数值组成</li>
+<li>每行可以给几个标签赋值，但要注意用“;”进行分割。如（tag1=value1；tag2=value2）</li>
+<li>如果一行是反斜杠结尾，那么下一行是延续上一行</li>
+<li>“#”用于注释</li>
+<li>不要使用tab！tab不能被vasp识别</li>
+</ul>
+<h2 id="2-常用标签（tag）说明"><a href="#2-常用标签（tag）说明" class="headerlink" title="2 常用标签（tag）说明"></a>2 常用标签（tag）说明</h2><h3 id="2-1-示例1-基本格式"><a href="#2-1-示例1-基本格式" class="headerlink" title="2.1 示例1:基本格式"></a>2.1 示例1:基本格式</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">SYSTEM &#x3D; Rhodium surface calculation</span><br><span class="line"></span><br><span class="line"># start parameters for this Run (automatic defaults are finem, hence not often required)</span><br><span class="line">  ISTART &#x3D;      0    #  job   : 0-new  1- orbitals from WAVECAR</span><br><span class="line">  ICHARG &#x3D;      2    #  charge: 1-file 2-atom 10-const</span><br><span class="line"></span><br><span class="line"># electronic optimization</span><br><span class="line">  ENCUT  &#x3D; 300.00 eV # defaults from POTCAR, but wise to include</span><br><span class="line">  ALGO  &#x3D;     Normal # alorithm for electron optimization, can be also FAST or ALL</span><br><span class="line">  NELM   &#x3D;     60    # of ELM steps, sometimes default is too small </span><br><span class="line">  EDIFF  &#x3D;   1E-06   # stopping-criterion for ELM</span><br><span class="line"># broadening and DOS related values; this works almost always</span><br><span class="line">  SIGMA  &#x3D;    0.05;  ISMEAR &#x3D;  0 # broad. in eV, -4-tet -1-fermi 0-gaus</span><br><span class="line"></span><br><span class="line"># ionic relaxation</span><br><span class="line">  EDIFFG &#x3D;  -1E-02   # stopping-criterion for IOM (all forces smaller 1E-2)</span><br><span class="line">  NSW    &#x3D;       20  # number of steps for IOM</span><br><span class="line">  IBRION &#x3D; 2         # CG for ions, often 1 (RMM-DISS) is faster</span><br><span class="line">  POTIM  &#x3D;    .5     # step for ionic-motion (for MD in fs)</span><br><span class="line"># performance optimization</span><br><span class="line">  KPAR   &#x3D;    4      # make 4 groups, each group working on one set of k-points </span><br><span class="line">  NCORE  &#x3D;    4      # one orbital handled by 4 cores </span><br><span class="line">  LREAL  &#x3D;    A      # real space projection; slightly less accurate but faster </span><br></pre></td></tr></table></figure>
+<p>第一行为说明性文字，简要说明本INCAR文件的计算内容</p>
+<ul>
+<li>初始设置</li>
+</ul>
+<p><strong>ISTART</strong>：决定是否读取WAVECAR文件；0-从头算（无WAVECAR时默认），1/2/3-从某个点继续算<br><strong>ICHARG</strong>：决定如何构建初始电荷密度；2-原子叠加（ISTART=0时默认）</p>
+<ul>
+<li>电子优化</li>
+</ul>
+<p><strong>ENCUT</strong>：单位为eV，指定平面波基集的截止能量；默认从POSCAR中获得（POSCAR中最大的ENMAX），但是最好单独定义，避免多个最大值冲突<br><strong>ALGO</strong>：指定电子最小化算法或者GW计算类型；默认为Normal<br><strong>NELM</strong>：定义可执行最大电子步（自洽）数<br><strong>EDIFF</strong>：定义电子步全局计算停止条件<br><strong>SIGMA</strong>：展开的宽度。取值要保证OUTCAR 中的 entropy T<em>S 这一项平均到每个原子小于 1-2 meV<br><em>*ISMEAR</em></em>：决定每个轨道的部分占位率设置；对于金属体系可取0或1</p>
+<ul>
+<li>离子弛豫</li>
+</ul>
+<p><strong>EDIFFG</strong>：定义离子弛豫停止计算条件；常常按照负值设置更简单<br><strong>NSW</strong>：设置最大离子步长数；<br><strong>IBRION</strong>：决定离子如何更新和移动；优化元胞用1，其他优化用2，频率计算用5<br><strong>POTIM</strong>：设置时间步长或者步宽缩放；越小工作越慢，不能超过默认值（IBRION=1/2/3，默认为0.5；IBRION=5，默认为0.015）</p>
+<ul>
+<li>性能优化</li>
+</ul>
+<p><strong>KPAR</strong>：确定并行处理k点数量；<br><strong>NCORE</strong>：确定在单个轨道上工作的计算核数;<br><strong>KPAR</strong>：确定投影算子是在实空间还是在倒空间求值。</p>
+<h3 id="2-2-示例说明"><a href="#2-2-示例说明" class="headerlink" title="2.2 示例说明"></a>2.2 示例说明</h3><p>等待更新…</p>
+]]></content>
+      <categories>
+        <category>VASP相关</category>
+      </categories>
+      <tags>
+        <tag>-VASP -ICNAR</tag>
       </tags>
   </entry>
 </search>

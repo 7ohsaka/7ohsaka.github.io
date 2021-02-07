@@ -22,20 +22,20 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="一些超级实用的小技巧 ，快来看看吧！">
+  <meta name="description" content="关于INCAR的那些事INCAR、POSCAR、POTCAR、KPOINTS是vasp计算的四个输入文件。我们这里单独把INCAR做一个总结，因为INCAR有特别容易出错且需要自己设置的变量相对是较多的。官网是如此描述INCAR的：  The INCAR file is the central input file of VASP. It determines “what to do and ho">
 <meta property="og:type" content="article">
-<meta property="og:title" content="小技巧">
-<meta property="og:url" content="http://example.com/2021/01/04/%E5%B0%8F%E6%8A%80%E5%B7%A7/index.html">
+<meta property="og:title" content="关于INCAR的那些事">
+<meta property="og:url" content="http://example.com/2021/02/07/%E5%85%B3%E4%BA%8EINCAR%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/index.html">
 <meta property="og:site_name" content="Zachary&#39;s Blog">
-<meta property="og:description" content="一些超级实用的小技巧 ，快来看看吧！">
+<meta property="og:description" content="关于INCAR的那些事INCAR、POSCAR、POTCAR、KPOINTS是vasp计算的四个输入文件。我们这里单独把INCAR做一个总结，因为INCAR有特别容易出错且需要自己设置的变量相对是较多的。官网是如此描述INCAR的：  The INCAR file is the central input file of VASP. It determines “what to do and ho">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-01-04T14:28:39.000Z">
-<meta property="article:modified_time" content="2021-01-04T14:35:46.664Z">
+<meta property="article:published_time" content="2021-02-07T09:49:18.000Z">
+<meta property="article:modified_time" content="2021-02-07T09:54:40.223Z">
 <meta property="article:author" content="Zachary">
-<meta property="article:tag" content="实用">
+<meta property="article:tag" content="-VASP -ICNAR">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2021/01/04/%E5%B0%8F%E6%8A%80%E5%B7%A7/">
+<link rel="canonical" href="http://example.com/2021/02/07/%E5%85%B3%E4%BA%8EINCAR%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/">
 
 
 <script id="page-configurations">
@@ -48,7 +48,7 @@
   };
 </script>
 
-  <title>小技巧 | Zachary's Blog</title>
+  <title>关于INCAR的那些事 | Zachary's Blog</title>
   
 
 
@@ -200,7 +200,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/04/%E5%B0%8F%E6%8A%80%E5%B7%A7/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/02/07/%E5%85%B3%E4%BA%8EINCAR%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -213,7 +213,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          小技巧
+          关于INCAR的那些事
         </h1>
 
         <div class="post-meta">
@@ -224,7 +224,16 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2021-01-04 22:28:39 / Modified: 22:35:46" itemprop="dateCreated datePublished" datetime="2021-01-04T22:28:39+08:00">2021-01-04</time>
+              <time title="Created: 2021-02-07 17:49:18 / Modified: 17:54:40" itemprop="dateCreated datePublished" datetime="2021-02-07T17:49:18+08:00">2021-02-07</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/VASP%E7%9B%B8%E5%85%B3/" itemprop="url" rel="index"><span itemprop="name">VASP相关</span></a>
+                </span>
             </span>
 
           
@@ -238,11 +247,38 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>一些超级实用的小技巧 ，快来看看吧！<br><a id="more"></a></p>
-<h1 id="1-hexo基本操作"><a href="#1-hexo基本操作" class="headerlink" title="1 hexo基本操作"></a>1 hexo基本操作</h1><p>新建文章<br><code>hexo new 文章名称</code><br>(或者)<br><code>hexo n 文章名称</code></p>
-<p>在线预览<br><code>hexo server</code><br>(或者)<br><code>hexo s</code></p>
-<p>一键部署<br><code>hexo deploy</code><br>(或者)<br><code>hexo d</code></p>
-<h1 id="2-百度文库复制操作"><a href="#2-百度文库复制操作" class="headerlink" title="2 百度文库复制操作"></a>2 百度文库复制操作</h1><p>F12——F1——debugged勾选——保持当前页面和网页进行复制</p>
+        <h1 id="关于INCAR的那些事"><a href="#关于INCAR的那些事" class="headerlink" title="关于INCAR的那些事"></a>关于INCAR的那些事</h1><p>INCAR、POSCAR、POTCAR、KPOINTS是vasp计算的四个输入文件。<br>我们这里单独把INCAR做一个总结，因为INCAR有特别容易出错且需要自己设置的变量相对是较多的。官网是如此描述INCAR的：</p>
+<blockquote>
+<p>The INCAR file is the central input file of VASP. It determines “what to do and how to do it”. There is a relatively large number of parameters that may be set by means of tags in the INCAR file. Most of these parameters have convenient defaults, and a user unaware of their meaning should not change any of the default values.</p>
+</blockquote>
+<p>同时给出了特别的提醒：<strong>Be very careful about the INCAR file, it is the main source of errors and false results!</strong></p>
+<p>一定要多查看官网手册：<a target="_blank" rel="noopener" href="https://www.vasp.at/wiki/index.php/The_VASP_Manual">vasp手册</a></p>
+<h2 id="1-基本规则"><a href="#1-基本规则" class="headerlink" title="1 基本规则"></a>1 基本规则</h2><ul>
+<li>每行都由一个标签（tag）、“=”和一些数值组成</li>
+<li>每行可以给几个标签赋值，但要注意用“;”进行分割。如（tag1=value1；tag2=value2）</li>
+<li>如果一行是反斜杠结尾，那么下一行是延续上一行</li>
+<li>“#”用于注释</li>
+<li>不要使用tab！tab不能被vasp识别</li>
+</ul>
+<h2 id="2-常用标签（tag）说明"><a href="#2-常用标签（tag）说明" class="headerlink" title="2 常用标签（tag）说明"></a>2 常用标签（tag）说明</h2><h3 id="2-1-示例1-基本格式"><a href="#2-1-示例1-基本格式" class="headerlink" title="2.1 示例1:基本格式"></a>2.1 示例1:基本格式</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">SYSTEM &#x3D; Rhodium surface calculation</span><br><span class="line"></span><br><span class="line"># start parameters for this Run (automatic defaults are finem, hence not often required)</span><br><span class="line">  ISTART &#x3D;      0    #  job   : 0-new  1- orbitals from WAVECAR</span><br><span class="line">  ICHARG &#x3D;      2    #  charge: 1-file 2-atom 10-const</span><br><span class="line"></span><br><span class="line"># electronic optimization</span><br><span class="line">  ENCUT  &#x3D; 300.00 eV # defaults from POTCAR, but wise to include</span><br><span class="line">  ALGO  &#x3D;     Normal # alorithm for electron optimization, can be also FAST or ALL</span><br><span class="line">  NELM   &#x3D;     60    # of ELM steps, sometimes default is too small </span><br><span class="line">  EDIFF  &#x3D;   1E-06   # stopping-criterion for ELM</span><br><span class="line"># broadening and DOS related values; this works almost always</span><br><span class="line">  SIGMA  &#x3D;    0.05;  ISMEAR &#x3D;  0 # broad. in eV, -4-tet -1-fermi 0-gaus</span><br><span class="line"></span><br><span class="line"># ionic relaxation</span><br><span class="line">  EDIFFG &#x3D;  -1E-02   # stopping-criterion for IOM (all forces smaller 1E-2)</span><br><span class="line">  NSW    &#x3D;       20  # number of steps for IOM</span><br><span class="line">  IBRION &#x3D; 2         # CG for ions, often 1 (RMM-DISS) is faster</span><br><span class="line">  POTIM  &#x3D;    .5     # step for ionic-motion (for MD in fs)</span><br><span class="line"># performance optimization</span><br><span class="line">  KPAR   &#x3D;    4      # make 4 groups, each group working on one set of k-points </span><br><span class="line">  NCORE  &#x3D;    4      # one orbital handled by 4 cores </span><br><span class="line">  LREAL  &#x3D;    A      # real space projection; slightly less accurate but faster </span><br></pre></td></tr></table></figure>
+<p>第一行为说明性文字，简要说明本INCAR文件的计算内容</p>
+<ul>
+<li>初始设置</li>
+</ul>
+<p><strong>ISTART</strong>：决定是否读取WAVECAR文件；0-从头算（无WAVECAR时默认），1/2/3-从某个点继续算<br><strong>ICHARG</strong>：决定如何构建初始电荷密度；2-原子叠加（ISTART=0时默认）</p>
+<ul>
+<li>电子优化</li>
+</ul>
+<p><strong>ENCUT</strong>：单位为eV，指定平面波基集的截止能量；默认从POSCAR中获得（POSCAR中最大的ENMAX），但是最好单独定义，避免多个最大值冲突<br><strong>ALGO</strong>：指定电子最小化算法或者GW计算类型；默认为Normal<br><strong>NELM</strong>：定义可执行最大电子步（自洽）数<br><strong>EDIFF</strong>：定义电子步全局计算停止条件<br><strong>SIGMA</strong>：展开的宽度。取值要保证OUTCAR 中的 entropy T<em>S 这一项平均到每个原子小于 1-2 meV<br><em>*ISMEAR</em></em>：决定每个轨道的部分占位率设置；对于金属体系可取0或1</p>
+<ul>
+<li>离子弛豫</li>
+</ul>
+<p><strong>EDIFFG</strong>：定义离子弛豫停止计算条件；常常按照负值设置更简单<br><strong>NSW</strong>：设置最大离子步长数；<br><strong>IBRION</strong>：决定离子如何更新和移动；优化元胞用1，其他优化用2，频率计算用5<br><strong>POTIM</strong>：设置时间步长或者步宽缩放；越小工作越慢，不能超过默认值（IBRION=1/2/3，默认为0.5；IBRION=5，默认为0.015）</p>
+<ul>
+<li>性能优化</li>
+</ul>
+<p><strong>KPAR</strong>：确定并行处理k点数量；<br><strong>NCORE</strong>：确定在单个轨道上工作的计算核数;<br><strong>KPAR</strong>：确定投影算子是在实空间还是在倒空间求值。</p>
+<h3 id="2-2-示例说明"><a href="#2-2-示例说明" class="headerlink" title="2.2 示例说明"></a>2.2 示例说明</h3><p>等待更新…</p>
 
     </div>
 
@@ -272,7 +308,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E5%AE%9E%E7%94%A8/" rel="tag"># 实用</a>
+              <a href="/tags/VASP-ICNAR/" rel="tag"># -VASP -ICNAR</a>
           </div>
 
         
@@ -281,13 +317,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021/01/04/CFD%E8%AE%A1%E7%AE%97%E6%80%BB%E7%BB%93/" rel="prev" title="CFD计算中常见问题及解决方案">
-      <i class="fa fa-chevron-left"></i> CFD计算中常见问题及解决方案
+    <a href="/2021/02/07/111/" rel="prev" title="111">
+      <i class="fa fa-chevron-left"></i> 111
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2021/01/06/Excel%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/" rel="next" title="Excel使用小技巧">
-      Excel使用小技巧 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -346,7 +379,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-hexo%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C"><span class="nav-number">1.</span> <span class="nav-text">1 hexo基本操作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-%E7%99%BE%E5%BA%A6%E6%96%87%E5%BA%93%E5%A4%8D%E5%88%B6%E6%93%8D%E4%BD%9C"><span class="nav-number">2.</span> <span class="nav-text">2 百度文库复制操作</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%B3%E4%BA%8EINCAR%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B"><span class="nav-number">1.</span> <span class="nav-text">关于INCAR的那些事</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%9F%BA%E6%9C%AC%E8%A7%84%E5%88%99"><span class="nav-number">1.1.</span> <span class="nav-text">1 基本规则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE%EF%BC%88tag%EF%BC%89%E8%AF%B4%E6%98%8E"><span class="nav-number">1.2.</span> <span class="nav-text">2 常用标签（tag）说明</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-%E7%A4%BA%E4%BE%8B1-%E5%9F%BA%E6%9C%AC%E6%A0%BC%E5%BC%8F"><span class="nav-number">1.2.1.</span> <span class="nav-text">2.1 示例1:基本格式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-%E7%A4%BA%E4%BE%8B%E8%AF%B4%E6%98%8E"><span class="nav-number">1.2.2.</span> <span class="nav-text">2.2 示例说明</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
