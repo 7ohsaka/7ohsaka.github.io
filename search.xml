@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>DetChem试用手册</title>
+    <url>/2022/04/03/DetChem%E5%AE%9E%E7%94%A8%E6%89%8B%E5%86%8C/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>博客常用命令</title>
     <url>/2022/04/02/%E5%8D%9A%E5%AE%A2%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
     <content><![CDATA[<p>github+hexo静态网页常用命令</p>
@@ -8,6 +13,37 @@
 ]]></content>
       <tags>
         <tag>tips</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>VASP试用手册</title>
+    <url>/2022/04/03/VASP%E8%A1%A8%E7%95%8C%E9%9D%A2%E5%82%AC%E5%8C%96%E8%AE%A1%E7%AE%97%E5%AE%9E%E7%94%A8%E6%89%8B%E5%86%8C/</url>
+    <content><![CDATA[<p><strong>报错时考虑的重要命令：</strong>dos2unix</p>
+<p><strong>POTCAR中常用参数说明：</strong></p>
+<ul>
+<li>VRHFIN 用来看元素的价电子排布，如果你元素周期表倒背如流，可以忽略这个参数；</li>
+<li>LEXCH 表示这个POTCAR对应的是GGA-PBE泛函；如果INCAR中不设定泛函，则默认通过这个参数来设定</li>
+<li>TITEL 就不用说了，指的是哪个元素，以及POTCAR发布的时间；</li>
+<li>ZVAL 指的是实际上POTCAR中价电子的数目，尤其是做Bader电荷分析的时候，极其重要。</li>
+<li>ENMAX 代表默认的截断能。与INCAR中的ENCUT这个参数相关。</li>
+</ul>
+<p>如果想把体系从Cartesian转化为Direct，我们可以算一个单点。因为CONTCAR结果为Direct坐标系</p>
+<p>电子结构优化：电子步<br>几何结构优化：离子步</p>
+<p>电子步（SCF）：EDIFF&lt;=&gt;NELM<br>离子步（结构优化）：EDIFFG&lt;=&gt;NSW</p>
+<p>电子迭代自洽算法：DAV（Blocked Davidson algorithm）、RMM（residual minimization scheme）、CG（conjugate-gradient algorithm）等等，在ICNAR中通过ALGO调整</p>
+<p>自旋极化参数设置（ISPIN=1，不打开自旋极化；=2打开）：<br>参照下列情况考虑自旋极化：</p>
+<ul>
+<li>单原子的计算</li>
+<li>O2分子(基态为三重态)</li>
+<li>自由基相关的计算</li>
+<li>含Fe，Co， Ni 的体系</li>
+<li>要计算的体系具有磁性：顺磁，铁磁，反铁磁等，要打开自旋极化</li>
+<li>当关注体系的电子性质时，且自己不知道加或者不加的时候，建议加上</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>vasp</tag>
+        <tag>实用手册</tag>
       </tags>
   </entry>
   <entry>

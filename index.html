@@ -329,6 +329,266 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://7ohsaka.github.io/2022/04/03/DetChem%E5%AE%9E%E7%94%A8%E6%89%8B%E5%86%8C/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Zachary's Zone">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2022/04/03/DetChem%E5%AE%9E%E7%94%A8%E6%89%8B%E5%86%8C/" itemprop="url">DetChem试用手册</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-04-03T20:09:55+08:00">
+                2022-04-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://7ohsaka.github.io/2022/04/03/VASP%E8%A1%A8%E7%95%8C%E9%9D%A2%E5%82%AC%E5%8C%96%E8%AE%A1%E7%AE%97%E5%AE%9E%E7%94%A8%E6%89%8B%E5%86%8C/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Zachary's Zone">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2022/04/03/VASP%E8%A1%A8%E7%95%8C%E9%9D%A2%E5%82%AC%E5%8C%96%E8%AE%A1%E7%AE%97%E5%AE%9E%E7%94%A8%E6%89%8B%E5%86%8C/" itemprop="url">VASP试用手册</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-04-03T20:09:44+08:00">
+                2022-04-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>报错时考虑的重要命令：</strong>dos2unix</p>
+<p><strong>POTCAR中常用参数说明：</strong></p>
+<ul>
+<li>VRHFIN 用来看元素的价电子排布，如果你元素周期表倒背如流，可以忽略这个参数；</li>
+<li>LEXCH 表示这个POTCAR对应的是GGA-PBE泛函；如果INCAR中不设定泛函，则默认通过这个参数来设定</li>
+<li>TITEL 就不用说了，指的是哪个元素，以及POTCAR发布的时间；</li>
+<li>ZVAL 指的是实际上POTCAR中价电子的数目，尤其是做Bader电荷分析的时候，极其重要。</li>
+<li>ENMAX 代表默认的截断能。与INCAR中的ENCUT这个参数相关。</li>
+</ul>
+<p>如果想把体系从Cartesian转化为Direct，我们可以算一个单点。因为CONTCAR结果为Direct坐标系</p>
+<p>电子结构优化：电子步<br>几何结构优化：离子步</p>
+<p>电子步（SCF）：EDIFF&lt;=&gt;NELM<br>离子步（结构优化）：EDIFFG&lt;=&gt;NSW</p>
+<p>电子迭代自洽算法：DAV（Blocked Davidson algorithm）、RMM（residual minimization scheme）、CG（conjugate-gradient algorithm）等等，在ICNAR中通过ALGO调整</p>
+<p>自旋极化参数设置（ISPIN=1，不打开自旋极化；=2打开）：<br>参照下列情况考虑自旋极化：</p>
+<ul>
+<li>单原子的计算</li>
+<li>O2分子(基态为三重态)</li>
+<li>自由基相关的计算</li>
+<li>含Fe，Co， Ni 的体系</li>
+<li>要计算的体系具有磁性：顺磁，铁磁，反铁磁等，要打开自旋极化</li>
+<li>当关注体系的电子性质时，且自己不知道加或者不加的时候，建议加上</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://7ohsaka.github.io/2022/04/03/%E5%B8%B8%E7%94%A8%E5%85%AC%E5%BC%8F%E6%B5%8B%E8%AF%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -608,7 +868,7 @@
               
                 <a href="/archives/%7C%7C%20archive">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -621,7 +881,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

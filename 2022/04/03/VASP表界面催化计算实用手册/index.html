@@ -112,7 +112,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="vasp,实用手册," />
 
 
 
@@ -123,16 +123,18 @@
 
 
 
-<meta name="description" content="大可不必了解我，看看就好。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="https://7ohsaka.github.io/about/index.html">
+<meta name="description" content="报错时考虑的重要命令：dos2unix POTCAR中常用参数说明：  VRHFIN 用来看元素的价电子排布，如果你元素周期表倒背如流，可以忽略这个参数； LEXCH 表示这个POTCAR对应的是GGA-PBE泛函；如果INCAR中不设定泛函，则默认通过这个参数来设定 TITEL 就不用说了，指的是哪个元素，以及POTCAR发布的时间； ZVAL 指的是实际上POTCAR中价电子的数目，尤其是做B">
+<meta property="og:type" content="article">
+<meta property="og:title" content="VASP试用手册">
+<meta property="og:url" content="https://7ohsaka.github.io/2022/04/03/VASP%E8%A1%A8%E7%95%8C%E9%9D%A2%E5%82%AC%E5%8C%96%E8%AE%A1%E7%AE%97%E5%AE%9E%E7%94%A8%E6%89%8B%E5%86%8C/index.html">
 <meta property="og:site_name" content="Zachary&#39;s Zone">
-<meta property="og:description" content="大可不必了解我，看看就好。">
+<meta property="og:description" content="报错时考虑的重要命令：dos2unix POTCAR中常用参数说明：  VRHFIN 用来看元素的价电子排布，如果你元素周期表倒背如流，可以忽略这个参数； LEXCH 表示这个POTCAR对应的是GGA-PBE泛函；如果INCAR中不设定泛函，则默认通过这个参数来设定 TITEL 就不用说了，指的是哪个元素，以及POTCAR发布的时间； ZVAL 指的是实际上POTCAR中价电子的数目，尤其是做B">
 <meta property="og:locale">
-<meta property="article:published_time" content="2022-04-03T07:01:31.000Z">
-<meta property="article:modified_time" content="2022-04-03T07:02:03.433Z">
+<meta property="article:published_time" content="2022-04-03T12:09:44.000Z">
+<meta property="article:modified_time" content="2022-04-03T12:19:33.985Z">
 <meta property="article:author" content="Zachary">
+<meta property="article:tag" content="vasp">
+<meta property="article:tag" content="实用手册">
 <meta name="twitter:card" content="summary">
 
 
@@ -163,13 +165,13 @@
 
 
 
-  <link rel="canonical" href="https://7ohsaka.github.io/about/"/>
+  <link rel="canonical" href="https://7ohsaka.github.io/2022/04/03/VASP表界面催化计算实用手册/"/>
 
 
 
 
 
-  <title>about | Zachary's Zone</title>
+  <title>VASP试用手册 | Zachary's Zone</title>
   
 
 
@@ -318,34 +320,171 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://7ohsaka.github.io/2022/04/03/VASP%E8%A1%A8%E7%95%8C%E9%9D%A2%E5%82%AC%E5%8C%96%E8%AE%A1%E7%AE%97%E5%AE%9E%E7%94%A8%E6%89%8B%E5%86%8C/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Zachary's Zone">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">about</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <p>大可不必了解我，看看就好。</p>
-
+          <h1 class="post-title" itemprop="name headline">VASP试用手册</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-04-03T20:09:44+08:00">
+                2022-04-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <p><strong>报错时考虑的重要命令：</strong>dos2unix</p>
+<p><strong>POTCAR中常用参数说明：</strong></p>
+<ul>
+<li>VRHFIN 用来看元素的价电子排布，如果你元素周期表倒背如流，可以忽略这个参数；</li>
+<li>LEXCH 表示这个POTCAR对应的是GGA-PBE泛函；如果INCAR中不设定泛函，则默认通过这个参数来设定</li>
+<li>TITEL 就不用说了，指的是哪个元素，以及POTCAR发布的时间；</li>
+<li>ZVAL 指的是实际上POTCAR中价电子的数目，尤其是做Bader电荷分析的时候，极其重要。</li>
+<li>ENMAX 代表默认的截断能。与INCAR中的ENCUT这个参数相关。</li>
+</ul>
+<p>如果想把体系从Cartesian转化为Direct，我们可以算一个单点。因为CONTCAR结果为Direct坐标系</p>
+<p>电子结构优化：电子步<br>几何结构优化：离子步</p>
+<p>电子步（SCF）：EDIFF&lt;=&gt;NELM<br>离子步（结构优化）：EDIFFG&lt;=&gt;NSW</p>
+<p>电子迭代自洽算法：DAV（Blocked Davidson algorithm）、RMM（residual minimization scheme）、CG（conjugate-gradient algorithm）等等，在ICNAR中通过ALGO调整</p>
+<p>自旋极化参数设置（ISPIN=1，不打开自旋极化；=2打开）：<br>参照下列情况考虑自旋极化：</p>
+<ul>
+<li>单原子的计算</li>
+<li>O2分子(基态为三重态)</li>
+<li>自由基相关的计算</li>
+<li>含Fe，Co， Ni 的体系</li>
+<li>要计算的体系具有磁性：顺磁，铁磁，反铁磁等，要打开自旋极化</li>
+<li>当关注体系的电子性质时，且自己不知道加或者不加的时候，建议加上</li>
+</ul>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/vasp/" rel="tag"># vasp</a>
+          
+            <a href="/tags/%E5%AE%9E%E7%94%A8%E6%89%8B%E5%86%8C/" rel="tag"># 实用手册</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2022/04/03/%E5%B8%B8%E7%94%A8%E5%85%AC%E5%BC%8F%E6%B5%8B%E8%AF%95/" rel="next" title="常用公式测试">
+                <i class="fa fa-chevron-left"></i> 常用公式测试
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2022/04/03/DetChem%E5%AE%9E%E7%94%A8%E6%89%8B%E5%86%8C/" rel="prev" title="DetChem试用手册">
+                DetChem试用手册 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -978,6 +1117,26 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 
