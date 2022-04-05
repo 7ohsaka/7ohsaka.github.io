@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>DetChem实用手册</title>
-    <url>/2022/04/03/DetChem%E5%AE%9E%E7%94%A8%E6%89%8B%E5%86%8C/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>VASP实用手册</title>
     <url>/2022/04/03/VASP%E5%AE%9E%E7%94%A8%E6%89%8B%E5%86%8C/</url>
     <content><![CDATA[<p><strong>报错时考虑的重要命令：</strong>dos2unix</p>
@@ -66,6 +61,11 @@
         <tag>vasp</tag>
         <tag>实用手册</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>DetChem实用手册</title>
+    <url>/2022/04/03/DetChem%E5%AE%9E%E7%94%A8%E6%89%8B%E5%86%8C/</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>博客常用命令</title>
