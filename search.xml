@@ -68,16 +68,6 @@
       </tags>
   </entry>
   <entry>
-    <title>博客常用命令</title>
-    <url>/2022/04/02/%E5%8D%9A%E5%AE%A2%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<p>github+hexo静态网页常用命令</p>
-<p><code>hexo clean</code> 清除缓存<br><code>hexo g</code> 生成（<em>hexo generation</em>）<br><code>hexo s</code> 启动服务预览（<em>hexo server</em>）<br><code>hexo d</code> 部署到网站（<em>hexo deploy</em>）<br><code>hexo n &quot;My_Blog&quot;</code> 新建文章（*hexo new “My_Blog”*） </p>
-]]></content>
-      <tags>
-        <tag>tips</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>win10环境下的VMware+Ubuntu虚拟机配置</title>
     <url>/2022/04/05/win10%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84VMware-Ubuntu%E8%99%9A%E6%8B%9F%E6%9C%BA%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<p>软件安装指南：</p>
@@ -88,6 +78,16 @@
       <tags>
         <tag>虚拟机</tag>
         <tag>计算机技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博客常用命令</title>
+    <url>/2022/04/02/%E5%8D%9A%E5%AE%A2%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<p>github+hexo静态网页常用命令</p>
+<p><code>hexo clean</code> 清除缓存<br><code>hexo g</code> 生成（<em>hexo generation</em>）<br><code>hexo s</code> 启动服务预览（<em>hexo server</em>）<br><code>hexo d</code> 部署到网站（<em>hexo deploy</em>）<br><code>hexo n &quot;My_Blog&quot;</code> 新建文章（*hexo new “My_Blog”*） </p>
+]]></content>
+      <tags>
+        <tag>tips</tag>
       </tags>
   </entry>
   <entry>
