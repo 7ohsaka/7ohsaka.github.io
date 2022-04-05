@@ -6,23 +6,6 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>win10环境下的VMware+Ubuntu虚拟机配置</title>
-    <url>/2022/04/05/win10%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84VMware-Ubuntu%E8%99%9A%E6%8B%9F%E6%9C%BA%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<p>软件安装指南：</p>
-<p>参照公众号指南：<a href="https://mp.weixin.qq.com/s/MKkob7X-yqKxrg2P8qp8lw">Vm虚拟机安装Linux系统教程</a></p>
-<p>网络配置问题：</p>
-<p>虚拟机运行后，很可能会出现网络无法使用的问题，此处陈列遇到的问题以及对应解决方法。<br>参考该文，重置网络配置解决，简单粗暴：<a href="https://blog.csdn.net/qq_43432935/article/details/91357761">解决VMware虚拟机无法联网问题</a></p>
-<p>相关报错信息与解决方案：</p>
-<p>报错：Ubuntu16.04安装vim出错：E: 软件包vim没有可供安装的候选者<br>解决：系统升级后再安装</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get upgrade</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <tags>
-        <tag>虚拟机</tag>
-        <tag>计算机技术</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>VASP实用手册</title>
     <url>/2022/04/03/VASP%E5%AE%9E%E7%94%A8%E6%89%8B%E5%86%8C/</url>
     <content><![CDATA[<p><strong>报错时考虑的重要命令：</strong>dos2unix</p>
@@ -85,13 +68,20 @@
       </tags>
   </entry>
   <entry>
-    <title>博客常用命令</title>
-    <url>/2022/04/02/%E5%8D%9A%E5%AE%A2%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<p>github+hexo静态网页常用命令</p>
-<p><code>hexo clean</code> 清除缓存<br><code>hexo g</code> 生成（<em>hexo generation</em>）<br><code>hexo s</code> 启动服务预览（<em>hexo server</em>）<br><code>hexo d</code> 部署到网站（<em>hexo deploy</em>）<br><code>hexo n &quot;My_Blog&quot;</code> 新建文章（*hexo new “My_Blog”*） </p>
+    <title>win10环境下的VMware+Ubuntu虚拟机配置</title>
+    <url>/2022/04/05/win10%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84VMware-Ubuntu%E8%99%9A%E6%8B%9F%E6%9C%BA%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<p>软件安装指南：</p>
+<p>参照公众号指南：<a href="https://mp.weixin.qq.com/s/MKkob7X-yqKxrg2P8qp8lw">Vm虚拟机安装Linux系统教程</a></p>
+<p>网络配置问题：</p>
+<p>虚拟机运行后，很可能会出现网络无法使用的问题，此处陈列遇到的问题以及对应解决方法。<br>参考该文，重置网络配置解决，简单粗暴：<a href="https://blog.csdn.net/qq_43432935/article/details/91357761">解决VMware虚拟机无法联网问题</a></p>
+<p>相关报错信息与解决方案：</p>
+<p>报错：Ubuntu16.04安装vim出错：E: 软件包vim没有可供安装的候选者<br>解决：系统升级后再安装</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get upgrade</span><br></pre></td></tr></table></figure>
+
 ]]></content>
       <tags>
-        <tag>tips</tag>
+        <tag>虚拟机</tag>
+        <tag>计算机技术</tag>
       </tags>
   </entry>
   <entry>
@@ -110,6 +100,16 @@
       </tags>
   </entry>
   <entry>
+    <title>博客常用命令</title>
+    <url>/2022/04/02/%E5%8D%9A%E5%AE%A2%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<p>github+hexo静态网页常用命令</p>
+<p><code>hexo clean</code> 清除缓存<br><code>hexo g</code> 生成（<em>hexo generation</em>）<br><code>hexo s</code> 启动服务预览（<em>hexo server</em>）<br><code>hexo d</code> 部署到网站（<em>hexo deploy</em>）<br><code>hexo n &quot;My_Blog&quot;</code> 新建文章（*hexo new “My_Blog”*） </p>
+]]></content>
+      <tags>
+        <tag>tips</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>有用的网站</title>
     <url>/2022/04/04/%E6%9C%89%E7%94%A8%E7%9A%84%E7%BD%91%E7%AB%99/</url>
     <content><![CDATA[<p>催化反应动力学研究课题组：</p>
@@ -118,6 +118,8 @@
 <p><a href="https://schmidt.chem.wisc.edu/research">Schimdt团队</a><br>下一代从头计算力场开发<br>微观动力学模拟<br>金属有机骨架成核与结晶</p>
 <p><a href="https://dion.che.udel.edu/">Vlachos团队</a><br>循环经济和各种原料的衍生化，包括生物质、食物垃圾、其他废物流和塑料，以生产可再生燃料、化学品和绿色氨。它集成了分子水平催化、动力学和反应机理、催化剂信息学和硅材料预测、催化剂活性中心测定、连续强化化学处理和化学过程电气化。</p>
 <p><a href="https://wintterlin.cup.uni-muenchen.de/index.php?id=5">Wintterlin团队</a><br>表面动力学<br>钴模型催化剂上的费托合成<br>银催化乙烯环氧化<br>金属表面外延石墨烯</p>
+<p>实用工具：</p>
+<p>多相催化反应机理自动生成工具：<a href="https://ecc-project.sandia.gov/ecc-project/research/rmg-cat1/">RMG-Cat</a></p>
 ]]></content>
       <tags>
         <tag>合集</tag>
