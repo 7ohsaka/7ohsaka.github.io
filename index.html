@@ -400,14 +400,33 @@
       
         
           
-            <p>软件安装指南：</p>
-<p>参照公众号指南：<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/MKkob7X-yqKxrg2P8qp8lw">Vm虚拟机安装Linux系统教程</a></p>
-<p>网络配置问题：</p>
-<p>虚拟机运行后，很可能会出现网络无法使用的问题，此处陈列遇到的问题以及对应解决方法。<br>参考该文，重置网络配置解决，简单粗暴：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_43432935/article/details/91357761">解决VMware虚拟机无法联网问题</a></p>
-<p>相关报错信息与解决方案：</p>
-<p>报错：Ubuntu16.04安装vim出错：E: 软件包vim没有可供安装的候选者<br>解决：系统升级后再安装</p>
+            <h1 id="软件安装指南："><a href="#软件安装指南：" class="headerlink" title="软件安装指南："></a>软件安装指南：</h1><p>参照公众号指南：<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/MKkob7X-yqKxrg2P8qp8lw">Vm虚拟机安装Linux系统教程</a></p>
+<h1 id="网络配置问题："><a href="#网络配置问题：" class="headerlink" title="网络配置问题："></a>网络配置问题：</h1><p>虚拟机运行后，很可能会出现网络无法使用的问题，此处陈列遇到的问题以及对应解决方法。<br>参考该文，重置网络配置解决，简单粗暴：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_43432935/article/details/91357761">解决VMware虚拟机无法联网问题</a></p>
+<h1 id="相关报错信息与解决方案："><a href="#相关报错信息与解决方案：" class="headerlink" title="相关报错信息与解决方案："></a>相关报错信息与解决方案：</h1><h2 id="报错：Ubuntu16-04安装vim出错：E-软件包vim没有可供安装的候选者"><a href="#报错：Ubuntu16-04安装vim出错：E-软件包vim没有可供安装的候选者" class="headerlink" title="报错：Ubuntu16.04安装vim出错：E: 软件包vim没有可供安装的候选者"></a>报错：Ubuntu16.04安装vim出错：E: 软件包vim没有可供安装的候选者</h2><p>解决：系统升级后再安装</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get upgrade</span><br></pre></td></tr></table></figure>
 
+<h2 id="解决Ubuntu使用ROOT账户登录图形界面报错认证失败"><a href="#解决Ubuntu使用ROOT账户登录图形界面报错认证失败" class="headerlink" title="解决Ubuntu使用ROOT账户登录图形界面报错认证失败"></a>解决Ubuntu使用ROOT账户登录图形界面报错认证失败</h2><ul>
+<li><p>登录普通用户使用sudo或sudo -i切换到root用户打开终端执行命令</p>
+<p>输入<code>sudo passwd root</code></p>
+<p>跟着命令提示,首先输入此账户的密码,再设定Root密码,确认Root密码</p>
+<p>然后使用su命令配合刚刚设定的密码登录root账户(必须)</p>
+</li>
+<li><p>在终端中以文本模式修改配置文件,可使用vi&#x2F;vim&#x2F;gedit来操作,考虑到新系统没安装vim,同时Ubuntu的vi工具又贼难用,本文以gedit命令做示范,执行:</p>
+<p><code>gedit /etc/pam.d/gdm-autologin</code></p>
+<p>在打开的文本编辑器中使用”#”来注释掉下列命令(就是在前面加一个#号)</p>
+<p><code>auth required pam_succeed_if.so user != root quiet_success</code></p>
+<p>保存并退出,继续在终端执行</p>
+<p><code>gedit /etc/pam.d/gdm-password</code></p>
+<p>注释掉同一句话,保存并退出,继续在终端执行</p>
+<p><code>gedit /root/.profile</code></p>
+<p>将内容中的”mesg n || true”修改为</p>
+<p><code>tty -s&amp;&amp;mesg n || true</code></p>
+</li>
+<li><p>终端执行reboot重启系统</p>
+<p>在登录账号选择界面选择未列出</p>
+<p>账户填root密码即为第一步设定的密码</p>
+</li>
+</ul>
 
           
         
