@@ -3,7 +3,69 @@
   <entry>
     <title>DetChem实用手册</title>
     <url>/2022/04/03/DetChem%E5%AE%9E%E7%94%A8%E6%89%8B%E5%86%8C/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<h1 id="参数设置要点"><a href="#参数设置要点" class="headerlink" title="参数设置要点"></a>参数设置要点</h1><h2 id="TROE表述"><a href="#TROE表述" class="headerlink" title="TROE表述"></a>TROE表述</h2><p>机理文件中的速率方程不仅仅可以用常规阿累尼乌斯公式，也可以使用TROE表达方法。<br>详见：manual2.8 P29</p>
+<h2 id="机理文件"><a href="#机理文件" class="headerlink" title="机理文件"></a>机理文件</h2><p>机理文件行和行之间留空行会导致报错！<br>Troe定义的时候务必记得露头出来（TROE空格一个即可写入第一个数据）</p>
+<p><strong>慎重用制表符！建议只使用多个空格键！</strong></p>
+<h1 id="常见问题-amp-解决方案"><a href="#常见问题-amp-解决方案" class="headerlink" title="常见问题&amp;解决方案"></a>常见问题&amp;解决方案</h1><h2 id="ERROR-multiple-definition-of-collision-efficiency"><a href="#ERROR-multiple-definition-of-collision-efficiency" class="headerlink" title="ERROR: multiple definition of collision efficiency"></a>ERROR: multiple definition of collision efficiency</h2><p>碰撞系数多重定义<br>暂时处理办法，通过测试删除一些较大的原子</p>
+<h2 id="不能算完整个管道"><a href="#不能算完整个管道" class="headerlink" title="不能算完整个管道"></a>不能算完整个管道</h2><p>往往是pack的实验参数不合适</p>
+<h2 id="同时采用不绝热条件和非等温条件报错"><a href="#同时采用不绝热条件和非等温条件报错" class="headerlink" title="同时采用不绝热条件和非等温条件报错"></a>同时采用不绝热条件和非等温条件报错</h2><p>形如<code>No correlations available for Nu calculation:Re</code><br>考虑两点：</p>
+<ul>
+<li><code>&lt;wall&gt;&lt;/wall&gt;</code>中的三个参数是否进行设置，注意不能设置管壁厚度为0，否则绝热条件失效</li>
+<li>通过测试，<code>particle_dia</code>会显著影响是否能进行计算，目前的折中办法是考虑改变该参数数量级，减少小数位数</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>实用手册</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博客常用命令</title>
+    <url>/2022/04/02/%E5%8D%9A%E5%AE%A2%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<p>github+hexo静态网页常用命令</p>
+<p><code>hexo clean</code> 清除缓存<br><code>hexo g</code> 生成（<em>hexo generation</em>）<br><code>hexo s</code> 启动服务预览（<em>hexo server</em>）<br><code>hexo d</code> 部署到网站（<em>hexo deploy</em>）<br><code>hexo n &quot;My_Blog&quot;</code> 新建文章（*hexo new “My_Blog”*） </p>
+]]></content>
+      <tags>
+        <tag>tips</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>win10环境下的VMware+Ubuntu虚拟机配置</title>
+    <url>/2022/04/05/win10%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84VMware-Ubuntu%E8%99%9A%E6%8B%9F%E6%9C%BA%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<h1 id="软件安装指南："><a href="#软件安装指南：" class="headerlink" title="软件安装指南："></a>软件安装指南：</h1><p>参照公众号指南：<a href="https://mp.weixin.qq.com/s/MKkob7X-yqKxrg2P8qp8lw">Vm虚拟机安装Linux系统教程</a></p>
+<h1 id="网络配置问题："><a href="#网络配置问题：" class="headerlink" title="网络配置问题："></a>网络配置问题：</h1><p>虚拟机运行后，很可能会出现网络无法使用的问题，此处陈列遇到的问题以及对应解决方法。<br>参考该文，重置网络配置解决，简单粗暴：<a href="https://blog.csdn.net/qq_43432935/article/details/91357761">解决VMware虚拟机无法联网问题</a></p>
+<h1 id="相关报错信息与解决方案："><a href="#相关报错信息与解决方案：" class="headerlink" title="相关报错信息与解决方案："></a>相关报错信息与解决方案：</h1><h2 id="报错：Ubuntu16-04安装vim出错：E-软件包vim没有可供安装的候选者"><a href="#报错：Ubuntu16-04安装vim出错：E-软件包vim没有可供安装的候选者" class="headerlink" title="报错：Ubuntu16.04安装vim出错：E: 软件包vim没有可供安装的候选者"></a>报错：Ubuntu16.04安装vim出错：E: 软件包vim没有可供安装的候选者</h2><p>解决：系统升级后再安装</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get upgrade</span><br></pre></td></tr></table></figure>
+
+<h2 id="解决Ubuntu使用ROOT账户登录图形界面报错认证失败"><a href="#解决Ubuntu使用ROOT账户登录图形界面报错认证失败" class="headerlink" title="解决Ubuntu使用ROOT账户登录图形界面报错认证失败"></a>解决Ubuntu使用ROOT账户登录图形界面报错认证失败</h2><ul>
+<li><p>登录普通用户使用sudo或sudo -i切换到root用户打开终端执行命令</p>
+<p>输入<code>sudo passwd root</code></p>
+<p>跟着命令提示,首先输入此账户的密码,再设定Root密码,确认Root密码</p>
+<p>然后使用su命令配合刚刚设定的密码登录root账户(必须)</p>
+</li>
+<li><p>在终端中以文本模式修改配置文件,可使用vi&#x2F;vim&#x2F;gedit来操作,考虑到新系统没安装vim,同时Ubuntu的vi工具又贼难用,本文以gedit命令做示范,执行:</p>
+<p><code>gedit /etc/pam.d/gdm-autologin</code></p>
+<p>在打开的文本编辑器中使用”#”来注释掉下列命令(就是在前面加一个#号)</p>
+<p><code>auth required pam_succeed_if.so user != root quiet_success</code></p>
+<p>保存并退出,继续在终端执行</p>
+<p><code>gedit /etc/pam.d/gdm-password</code></p>
+<p>注释掉同一句话,保存并退出,继续在终端执行</p>
+<p><code>gedit /root/.profile</code></p>
+<p>将内容中的”mesg n || true”修改为</p>
+<p><code>tty -s&amp;&amp;mesg n || true</code></p>
+</li>
+<li><p>终端执行reboot重启系统</p>
+<p>在登录账号选择界面选择未列出</p>
+<p>账户填root密码即为第一步设定的密码</p>
+</li>
+</ul>
+<h1 id="linux常用命令"><a href="#linux常用命令" class="headerlink" title="linux常用命令"></a>linux常用命令</h1><p>新建文件 ：<code>touch 文件名.txt</code><br>执行<code>.pl</code>文件：<code>./文件名.pl</code><br>解压缩<code>tar</code>文件：<code>tar -xf 文件名</code></p>
+<h1 id="虚拟机与主机实现交互（自由复制粘贴）"><a href="#虚拟机与主机实现交互（自由复制粘贴）" class="headerlink" title="虚拟机与主机实现交互（自由复制粘贴）"></a>虚拟机与主机实现交互（自由复制粘贴）</h1><p>按照VMware提示安装好VMware Tools（必须弹出原有的CD占用）</p>
+<p>安装完成后重启即可实现自由复制粘贴（在虚拟机复制–&gt;在主机粘贴 或 在主机复制–&gt;在虚拟机粘贴）</p>
+]]></content>
+      <tags>
+        <tag>虚拟机</tag>
+        <tag>计算机技术</tag>
+      </tags>
   </entry>
   <entry>
     <title>VASP实用手册</title>
@@ -63,18 +125,24 @@
 <p>LCHARG&amp;LWAVE：<br>LCHARG determines whether the charge densities (files CHGCAR and CHG) are written.<br>LWAVE determines whether the wavefunctions are written to the WAVECAR file at the end of a run.</p>
 ]]></content>
       <tags>
-        <tag>vasp</tag>
         <tag>实用手册</tag>
+        <tag>vasp</tag>
       </tags>
   </entry>
   <entry>
-    <title>博客常用命令</title>
-    <url>/2022/04/02/%E5%8D%9A%E5%AE%A2%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<p>github+hexo静态网页常用命令</p>
-<p><code>hexo clean</code> 清除缓存<br><code>hexo g</code> 生成（<em>hexo generation</em>）<br><code>hexo s</code> 启动服务预览（<em>hexo server</em>）<br><code>hexo d</code> 部署到网站（<em>hexo deploy</em>）<br><code>hexo n &quot;My_Blog&quot;</code> 新建文章（*hexo new “My_Blog”*） </p>
+    <title>有用的网站</title>
+    <url>/2022/04/04/%E6%9C%89%E7%94%A8%E7%9A%84%E7%BD%91%E7%AB%99/</url>
+    <content><![CDATA[<p>催化反应动力学研究课题组：</p>
+<p><a href="https://www.itcp.kit.edu/deutschmann/english/290.php">KIT-Olaf团队</a><br>微观催化反应动力学多尺度建模</p>
+<p><a href="https://www.ivofilot.nl/">ivofilot团队</a><br>理论与计算化学</p>
+<p><a href="https://schmidt.chem.wisc.edu/research">Schimdt团队</a><br>下一代从头计算力场开发<br>微观动力学模拟<br>金属有机骨架成核与结晶</p>
+<p><a href="https://dion.che.udel.edu/">Vlachos团队</a><br>循环经济和各种原料的衍生化，包括生物质、食物垃圾、其他废物流和塑料，以生产可再生燃料、化学品和绿色氨。它集成了分子水平催化、动力学和反应机理、催化剂信息学和硅材料预测、催化剂活性中心测定、连续强化化学处理和化学过程电气化。</p>
+<p><a href="https://wintterlin.cup.uni-muenchen.de/index.php?id=5">Wintterlin团队</a><br>表面动力学<br>钴模型催化剂上的费托合成<br>银催化乙烯环氧化<br>金属表面外延石墨烯</p>
+<p>实用工具：</p>
+<p>多相催化反应机理自动生成工具：<a href="https://ecc-project.sandia.gov/ecc-project/research/rmg-cat1/">RMG-Cat</a></p>
 ]]></content>
       <tags>
-        <tag>tips</tag>
+        <tag>合集</tag>
       </tags>
   </entry>
   <entry>
@@ -93,67 +161,12 @@
       </tags>
   </entry>
   <entry>
-    <title>win10环境下的VMware+Ubuntu虚拟机配置</title>
-    <url>/2022/04/05/win10%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84VMware-Ubuntu%E8%99%9A%E6%8B%9F%E6%9C%BA%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<h1 id="软件安装指南："><a href="#软件安装指南：" class="headerlink" title="软件安装指南："></a>软件安装指南：</h1><p>参照公众号指南：<a href="https://mp.weixin.qq.com/s/MKkob7X-yqKxrg2P8qp8lw">Vm虚拟机安装Linux系统教程</a></p>
-<h1 id="网络配置问题："><a href="#网络配置问题：" class="headerlink" title="网络配置问题："></a>网络配置问题：</h1><p>虚拟机运行后，很可能会出现网络无法使用的问题，此处陈列遇到的问题以及对应解决方法。<br>参考该文，重置网络配置解决，简单粗暴：<a href="https://blog.csdn.net/qq_43432935/article/details/91357761">解决VMware虚拟机无法联网问题</a></p>
-<h1 id="相关报错信息与解决方案："><a href="#相关报错信息与解决方案：" class="headerlink" title="相关报错信息与解决方案："></a>相关报错信息与解决方案：</h1><h2 id="报错：Ubuntu16-04安装vim出错：E-软件包vim没有可供安装的候选者"><a href="#报错：Ubuntu16-04安装vim出错：E-软件包vim没有可供安装的候选者" class="headerlink" title="报错：Ubuntu16.04安装vim出错：E: 软件包vim没有可供安装的候选者"></a>报错：Ubuntu16.04安装vim出错：E: 软件包vim没有可供安装的候选者</h2><p>解决：系统升级后再安装</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get upgrade</span><br></pre></td></tr></table></figure>
-
-<h2 id="解决Ubuntu使用ROOT账户登录图形界面报错认证失败"><a href="#解决Ubuntu使用ROOT账户登录图形界面报错认证失败" class="headerlink" title="解决Ubuntu使用ROOT账户登录图形界面报错认证失败"></a>解决Ubuntu使用ROOT账户登录图形界面报错认证失败</h2><ul>
-<li><p>登录普通用户使用sudo或sudo -i切换到root用户打开终端执行命令</p>
-<p>输入<code>sudo passwd root</code></p>
-<p>跟着命令提示,首先输入此账户的密码,再设定Root密码,确认Root密码</p>
-<p>然后使用su命令配合刚刚设定的密码登录root账户(必须)</p>
-</li>
-<li><p>在终端中以文本模式修改配置文件,可使用vi&#x2F;vim&#x2F;gedit来操作,考虑到新系统没安装vim,同时Ubuntu的vi工具又贼难用,本文以gedit命令做示范,执行:</p>
-<p><code>gedit /etc/pam.d/gdm-autologin</code></p>
-<p>在打开的文本编辑器中使用”#”来注释掉下列命令(就是在前面加一个#号)</p>
-<p><code>auth required pam_succeed_if.so user != root quiet_success</code></p>
-<p>保存并退出,继续在终端执行</p>
-<p><code>gedit /etc/pam.d/gdm-password</code></p>
-<p>注释掉同一句话,保存并退出,继续在终端执行</p>
-<p><code>gedit /root/.profile</code></p>
-<p>将内容中的”mesg n || true”修改为</p>
-<p><code>tty -s&amp;&amp;mesg n || true</code></p>
-</li>
-<li><p>终端执行reboot重启系统</p>
-<p>在登录账号选择界面选择未列出</p>
-<p>账户填root密码即为第一步设定的密码</p>
-</li>
-</ul>
-<h1 id="linux常用命令"><a href="#linux常用命令" class="headerlink" title="linux常用命令"></a>linux常用命令</h1><p>新建文件 ：<code>touch 文件名.txt</code><br>执行<code>.pl</code>文件：<code>./文件名.pl</code><br>解压缩<code>tar</code>文件：<code>tar -xf 文件名</code></p>
-<h1 id="虚拟机与主机实现交互（自由复制粘贴）"><a href="#虚拟机与主机实现交互（自由复制粘贴）" class="headerlink" title="虚拟机与主机实现交互（自由复制粘贴）"></a>虚拟机与主机实现交互（自由复制粘贴）</h1><p>按照VMware提示安装好VMware Tools（必须弹出原有的CD占用）</p>
-<p>安装完成后重启即可实现自由复制粘贴（在虚拟机复制–&gt;在主机粘贴 或 在主机复制–&gt;在虚拟机粘贴）</p>
-]]></content>
-      <tags>
-        <tag>虚拟机</tag>
-        <tag>计算机技术</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>周工作总结0416</title>
     <url>/2022/04/11/%E5%91%A8%E5%B7%A5%E4%BD%9C%E6%80%BB%E7%BB%930416/</url>
     <content><![CDATA[<h1 id="课题推进"><a href="#课题推进" class="headerlink" title="课题推进"></a>课题推进</h1><p>lll</p>
 ]]></content>
       <tags>
         <tag>工作总结</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>有用的网站</title>
-    <url>/2022/04/04/%E6%9C%89%E7%94%A8%E7%9A%84%E7%BD%91%E7%AB%99/</url>
-    <content><![CDATA[<p>催化反应动力学研究课题组：</p>
-<p><a href="https://www.itcp.kit.edu/deutschmann/english/290.php">KIT-Olaf团队</a><br>微观催化反应动力学多尺度建模</p>
-<p><a href="https://www.ivofilot.nl/">ivofilot团队</a><br>理论与计算化学</p>
-<p><a href="https://schmidt.chem.wisc.edu/research">Schimdt团队</a><br>下一代从头计算力场开发<br>微观动力学模拟<br>金属有机骨架成核与结晶</p>
-<p><a href="https://dion.che.udel.edu/">Vlachos团队</a><br>循环经济和各种原料的衍生化，包括生物质、食物垃圾、其他废物流和塑料，以生产可再生燃料、化学品和绿色氨。它集成了分子水平催化、动力学和反应机理、催化剂信息学和硅材料预测、催化剂活性中心测定、连续强化化学处理和化学过程电气化。</p>
-<p><a href="https://wintterlin.cup.uni-muenchen.de/index.php?id=5">Wintterlin团队</a><br>表面动力学<br>钴模型催化剂上的费托合成<br>银催化乙烯环氧化<br>金属表面外延石墨烯</p>
-<p>实用工具：</p>
-<p>多相催化反应机理自动生成工具：<a href="https://ecc-project.sandia.gov/ecc-project/research/rmg-cat1/">RMG-Cat</a></p>
-]]></content>
-      <tags>
-        <tag>合集</tag>
       </tags>
   </entry>
 </search>

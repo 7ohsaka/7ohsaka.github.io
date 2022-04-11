@@ -796,7 +796,17 @@
       
         
           
-            
+            <h1 id="参数设置要点"><a href="#参数设置要点" class="headerlink" title="参数设置要点"></a>参数设置要点</h1><h2 id="TROE表述"><a href="#TROE表述" class="headerlink" title="TROE表述"></a>TROE表述</h2><p>机理文件中的速率方程不仅仅可以用常规阿累尼乌斯公式，也可以使用TROE表达方法。<br>详见：manual2.8 P29</p>
+<h2 id="机理文件"><a href="#机理文件" class="headerlink" title="机理文件"></a>机理文件</h2><p>机理文件行和行之间留空行会导致报错！<br>Troe定义的时候务必记得露头出来（TROE空格一个即可写入第一个数据）</p>
+<p><strong>慎重用制表符！建议只使用多个空格键！</strong></p>
+<h1 id="常见问题-amp-解决方案"><a href="#常见问题-amp-解决方案" class="headerlink" title="常见问题&amp;解决方案"></a>常见问题&amp;解决方案</h1><h2 id="ERROR-multiple-definition-of-collision-efficiency"><a href="#ERROR-multiple-definition-of-collision-efficiency" class="headerlink" title="ERROR: multiple definition of collision efficiency"></a>ERROR: multiple definition of collision efficiency</h2><p>碰撞系数多重定义<br>暂时处理办法，通过测试删除一些较大的原子</p>
+<h2 id="不能算完整个管道"><a href="#不能算完整个管道" class="headerlink" title="不能算完整个管道"></a>不能算完整个管道</h2><p>往往是pack的实验参数不合适</p>
+<h2 id="同时采用不绝热条件和非等温条件报错"><a href="#同时采用不绝热条件和非等温条件报错" class="headerlink" title="同时采用不绝热条件和非等温条件报错"></a>同时采用不绝热条件和非等温条件报错</h2><p>形如<code>No correlations available for Nu calculation:Re</code><br>考虑两点：</p>
+<ul>
+<li><code>&lt;wall&gt;&lt;/wall&gt;</code>中的三个参数是否进行设置，注意不能设置管壁厚度为0，否则绝热条件失效</li>
+<li>通过测试，<code>particle_dia</code>会显著影响是否能进行计算，目前的折中办法是考虑改变该参数数量级，减少小数位数</li>
+</ul>
+
           
         
       
