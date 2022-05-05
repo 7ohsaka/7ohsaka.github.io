@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Cantera实用手册</title>
+    <url>/2022/05/05/Cantera%E5%AE%9E%E7%94%A8%E6%89%8B%E5%86%8C/</url>
+    <content><![CDATA[<blockquote>
+<p>Cantera is an open-source suite of tools for problems involving chemical kinetics, thermodynamics, and transport processes.</p>
+</blockquote>
+<p>cantera提供了多种语言的接口，支持包括C++、MATLAB和python等语言在内的主流语法。其中以MATLAB和python用户居多。本人主要基于python语法进行cantera的有关开发。</p>
+<h1 id="为什么选择cantera？"><a href="#为什么选择cantera？" class="headerlink" title="为什么选择cantera？"></a>为什么选择cantera？</h1><p><strong>开源</strong>！<strong>免费</strong>！作为开源的资源库，cantera提供了基本的热力学、动力学以及反应器的类，我们可以在其基础上开发符合自己需求的模型，满足我们<strong>独特的需求</strong>。相对的，诸如chemkin这类封装完整的<strong>付费</strong>软件，用户自主修改的自由度几乎为零（当然，大部分情况下，该软件已经很成熟和稳定，不需要额外修改）。</p>
+<p>对于非均相的体系，目前（截止2022年5月）没有比较成熟的模拟软件，尽管有KIT-Olaf团队的DetChem这类开发许久（20世纪90年代开始）的封装程序，但是仍然不成熟，在微分方程求解和反应器模拟中仍然有很多不足。cantera恰恰可以提供一个用户自己开发的途径。</p>
+<h1 id="cantera案例分析"><a href="#cantera案例分析" class="headerlink" title="cantera案例分析"></a>cantera案例分析</h1>]]></content>
+      <tags>
+        <tag>cantera</tag>
+        <tag>实用手册</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>DetChem实用手册</title>
     <url>/2022/04/03/DetChem%E5%AE%9E%E7%94%A8%E6%89%8B%E5%86%8C/</url>
     <content><![CDATA[<h1 id="参数设置要点"><a href="#参数设置要点" class="headerlink" title="参数设置要点"></a>参数设置要点</h1><h2 id="TROE表述"><a href="#TROE表述" class="headerlink" title="TROE表述"></a>TROE表述</h2><p>机理文件中的速率方程不仅仅可以用常规阿累尼乌斯公式，也可以使用TROE表达方法。<br>详见：manual2.8 P29</p>
@@ -16,21 +31,6 @@
 ]]></content>
       <tags>
         <tag>实用手册</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>常用公式测试</title>
-    <url>/2022/04/03/%E5%B8%B8%E7%94%A8%E5%85%AC%E5%BC%8F%E6%B5%8B%E8%AF%95/</url>
-    <content><![CDATA[<p>常用公式测试</p>
-<ul>
-<li><p>数学公式</p>
-<p>$A_1^2+B_2^2&#x3D;C_3^2$</p>
-</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>tips</tag>
-        <tag>测试</tag>
       </tags>
   </entry>
   <entry>
@@ -96,46 +96,6 @@
       </tags>
   </entry>
   <entry>
-    <title>博客常用命令</title>
-    <url>/2022/04/02/%E5%8D%9A%E5%AE%A2%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<p>github+hexo静态网页常用命令</p>
-<p><code>hexo clean</code> 清除缓存<br><code>hexo g</code> 生成（<em>hexo generation</em>）<br><code>hexo s</code> 启动服务预览（<em>hexo server</em>）<br><code>hexo d</code> 部署到网站（<em>hexo deploy</em>）<br><code>hexo n &quot;My_Blog&quot;</code> 新建文章（*hexo new “My_Blog”*） </p>
-]]></content>
-      <tags>
-        <tag>tips</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>燃烧反应动力学笔记</title>
-    <url>/2022/04/25/%E7%87%83%E7%83%A7%E5%8F%8D%E5%BA%94%E5%8A%A8%E5%8A%9B%E5%AD%A6%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<p>参考：<strong>燃烧反应动力学（课程）（齐飞，李玉阳）</strong>和<strong>燃烧反应动力学（参考书）（齐飞，李玉阳，苑文浩）</strong></p>
-<h1 id="C0-C4基础燃料反应机理"><a href="#C0-C4基础燃料反应机理" class="headerlink" title="C0-C4基础燃料反应机理"></a>C<del>0</del>-C<del>4</del>基础燃料反应机理</h1><h2 id="氢气机理"><a href="#氢气机理" class="headerlink" title="氢气机理"></a>氢气机理</h2><p><em>已经确认的比较重要的20个反应</em></p>
-<p><strong>自由基与分子置换反应：</strong><br>$$<br>\ce{H + O2 &#x3D; O + OH}\tag{1}<br>$$</p>
-<p>$$<br>\ce{O + H2 &#x3D; H + OH}\tag{2}<br>$$</p>
-<p>$$<br>\ce{OH + H2 &#x3D; H + H2O}\tag{3}<br>$$</p>
-<p>$$<br>\ce{O + H2O &#x3D; OH + OH}\tag{4}<br>$$</p>
-<p><strong>HO<del>2</del>的反应：</strong><br>$$<br>\ce{H +O2 +M &#x3D; HO2 +M}\tag{5}<br>$$</p>
-<p>$$<br>\ce{HO2 +H &#x3D; OH +OH}\tag{6}<br>$$</p>
-<p>$$<br>\ce{HO2 +H &#x3D; H2 +O2}\tag{7}<br>$$</p>
-<p>$$<br>\ce{HO2 +H &#x3D; H2O +O}\tag{8}<br>$$</p>
-<p>$$<br>\ce{HO2 +O &#x3D; OH +O2}\tag{9}<br>$$</p>
-<p>$$<br>\ce{HO2 +OH &#x3D; H2O +O2}\tag{10}<br>$$</p>
-<p><strong>H<del>2</del>O<del>2</del>的反应：</strong><br>$$<br>\ce{HO2 +HO2 &#x3D; H2O2 +O2}\tag{11}<br>$$</p>
-<p>$$<br>\ce{OH +OH (+M) &#x3D; H2O2 (+M)}\tag{12}<br>$$</p>
-<p>$$<br>\ce{H2O2 +H &#x3D; HO2 +H2}\tag{13}<br>$$</p>
-<p>$$<br>\ce{H2O2 +H &#x3D; H2O +OH}\tag{14}<br>$$</p>
-<p>$$<br>\ce{H2O2 +OH &#x3D; H2O +HO2}\tag{15}<br>$$</p>
-<p>$$<br>\ce{H2O2 +O &#x3D; OH +HO2}\tag{16}<br>$$</p>
-<p><strong>自由基与自由基的复合反应：</strong><br>$$<br>\ce{H +OH +M &#x3D; H2O +M}\tag{17}<br>$$</p>
-<p>$$<br>\ce{H +H +M &#x3D; H2 +M}\tag{18}<br>$$</p>
-<p>$$<br>\ce{O +O +M &#x3D; O2 +M}\tag{19}<br>$$</p>
-<p>$$<br>\ce{H +O +M &#x3D; OH +M}\tag{20}<br>$$</p>
-<h2 id="氢气机理解析"><a href="#氢气机理解析" class="headerlink" title="氢气机理解析"></a>氢气机理解析</h2>]]></content>
-      <tags>
-        <tag>笔记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>win10环境下的VMware+Ubuntu虚拟机配置</title>
     <url>/2022/04/05/win10%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84VMware-Ubuntu%E8%99%9A%E6%8B%9F%E6%9C%BA%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<h1 id="软件安装指南："><a href="#软件安装指南：" class="headerlink" title="软件安装指南："></a>软件安装指南：</h1><p>参照公众号指南：<a href="https://mp.weixin.qq.com/s/MKkob7X-yqKxrg2P8qp8lw">Vm虚拟机安装Linux系统教程</a></p>
@@ -175,6 +135,31 @@
       </tags>
   </entry>
   <entry>
+    <title>博客常用命令</title>
+    <url>/2022/04/02/%E5%8D%9A%E5%AE%A2%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<p>github+hexo静态网页常用命令</p>
+<p><code>hexo clean</code> 清除缓存<br><code>hexo g</code> 生成（<em>hexo generation</em>）<br><code>hexo s</code> 启动服务预览（<em>hexo server</em>）<br><code>hexo d</code> 部署到网站（<em>hexo deploy</em>）<br><code>hexo n &quot;My_Blog&quot;</code> 新建文章（*hexo new “My_Blog”*） </p>
+]]></content>
+      <tags>
+        <tag>tips</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>常用公式测试</title>
+    <url>/2022/04/03/%E5%B8%B8%E7%94%A8%E5%85%AC%E5%BC%8F%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<p>常用公式测试</p>
+<ul>
+<li><p>数学公式</p>
+<p>$A_1^2+B_2^2&#x3D;C_3^2$</p>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>tips</tag>
+        <tag>测试</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>有用的网站</title>
     <url>/2022/04/04/%E6%9C%89%E7%94%A8%E7%9A%84%E7%BD%91%E7%AB%99/</url>
     <content><![CDATA[<p>催化反应动力学研究课题组：</p>
@@ -188,6 +173,44 @@
 ]]></content>
       <tags>
         <tag>合集</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>燃烧反应动力学笔记</title>
+    <url>/2022/04/25/%E7%87%83%E7%83%A7%E5%8F%8D%E5%BA%94%E5%8A%A8%E5%8A%9B%E5%AD%A6%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p>参考：<strong>燃烧反应动力学（课程）（齐飞，李玉阳）</strong>和<strong>燃烧反应动力学（参考书）（齐飞，李玉阳，苑文浩）</strong></p>
+<h1 id="C0-C4基础燃料反应机理"><a href="#C0-C4基础燃料反应机理" class="headerlink" title="C0-C4基础燃料反应机理"></a>C<del>0</del>-C<del>4</del>基础燃料反应机理</h1><h2 id="氢气机理"><a href="#氢气机理" class="headerlink" title="氢气机理"></a>氢气机理</h2><p><em>已经确认的比较重要的20个反应</em></p>
+<p><strong>自由基与分子置换反应：</strong><br>$$<br>\ce{H + O2 &#x3D; O + OH}\tag{1}<br>$$</p>
+<p>$$<br>\ce{O + H2 &#x3D; H + OH}\tag{2}<br>$$</p>
+<p>$$<br>\ce{OH + H2 &#x3D; H + H2O}\tag{3}<br>$$</p>
+<p>$$<br>\ce{O + H2O &#x3D; OH + OH}\tag{4}<br>$$</p>
+<p><strong>HO<del>2</del>的反应：</strong><br>$$<br>\ce{H +O2 +M &#x3D; HO2 +M}\tag{5}<br>$$</p>
+<p>$$<br>\ce{HO2 +H &#x3D; OH +OH}\tag{6}<br>$$</p>
+<p>$$<br>\ce{HO2 +H &#x3D; H2 +O2}\tag{7}<br>$$</p>
+<p>$$<br>\ce{HO2 +H &#x3D; H2O +O}\tag{8}<br>$$</p>
+<p>$$<br>\ce{HO2 +O &#x3D; OH +O2}\tag{9}<br>$$</p>
+<p>$$<br>\ce{HO2 +OH &#x3D; H2O +O2}\tag{10}<br>$$</p>
+<p><strong>H<del>2</del>O<del>2</del>的反应：</strong><br>$$<br>\ce{HO2 +HO2 &#x3D; H2O2 +O2}\tag{11}<br>$$</p>
+<p>$$<br>\ce{OH +OH (+M) &#x3D; H2O2 (+M)}\tag{12}<br>$$</p>
+<p>$$<br>\ce{H2O2 +H &#x3D; HO2 +H2}\tag{13}<br>$$</p>
+<p>$$<br>\ce{H2O2 +H &#x3D; H2O +OH}\tag{14}<br>$$</p>
+<p>$$<br>\ce{H2O2 +OH &#x3D; H2O +HO2}\tag{15}<br>$$</p>
+<p>$$<br>\ce{H2O2 +O &#x3D; OH +HO2}\tag{16}<br>$$</p>
+<p><strong>自由基与自由基的复合反应：</strong><br>$$<br>\ce{H +OH +M &#x3D; H2O +M}\tag{17}<br>$$</p>
+<p>$$<br>\ce{H +H +M &#x3D; H2 +M}\tag{18}<br>$$</p>
+<p>$$<br>\ce{O +O +M &#x3D; O2 +M}\tag{19}<br>$$</p>
+<p>$$<br>\ce{H +O +M &#x3D; OH +M}\tag{20}<br>$$</p>
+<h2 id="氢气机理解析"><a href="#氢气机理解析" class="headerlink" title="氢气机理解析"></a>氢气机理解析</h2><h1 id="Combustion-Chemistry-of-Aromatics"><a href="#Combustion-Chemistry-of-Aromatics" class="headerlink" title="Combustion Chemistry of Aromatics"></a>Combustion Chemistry of Aromatics</h1><p>芳香族是输运替代燃料重要组成部分。</p>
+<p>R：烷基</p>
+<h2 id="反应类型"><a href="#反应类型" class="headerlink" title="反应类型"></a>反应类型</h2><p><strong>高温反应类型</strong>：</p>
+<ol>
+<li>C-C和C-H键解离反应</li>
+<li>H原子提取和复分解反应</li>
+<li>本位取代反应</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>笔记</tag>
       </tags>
   </entry>
 </search>
