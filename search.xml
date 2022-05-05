@@ -1,21 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Cantera实用手册</title>
-    <url>/2022/05/05/Cantera%E5%AE%9E%E7%94%A8%E6%89%8B%E5%86%8C/</url>
-    <content><![CDATA[<blockquote>
-<p>Cantera is an open-source suite of tools for problems involving chemical kinetics, thermodynamics, and transport processes.</p>
-</blockquote>
-<p>cantera提供了多种语言的接口，支持包括C++、MATLAB和python等语言在内的主流语法。其中以MATLAB和python用户居多。本人主要基于python语法进行cantera的有关开发。</p>
-<h1 id="为什么选择cantera？"><a href="#为什么选择cantera？" class="headerlink" title="为什么选择cantera？"></a>为什么选择cantera？</h1><p><strong>开源</strong>！<strong>免费</strong>！作为开源的资源库，cantera提供了基本的热力学、动力学以及反应器的类，我们可以在其基础上开发符合自己需求的模型，满足我们<strong>独特的需求</strong>。相对的，诸如chemkin这类封装完整的<strong>付费</strong>软件，用户自主修改的自由度几乎为零（当然，大部分情况下，该软件已经很成熟和稳定，不需要额外修改）。</p>
-<p>对于非均相的体系，目前（截止2022年5月）没有比较成熟的模拟软件，尽管有KIT-Olaf团队的DetChem这类开发许久（20世纪90年代开始）的封装程序，但是仍然不成熟，在微分方程求解和反应器模拟中仍然有很多不足。cantera恰恰可以提供一个用户自己开发的途径。</p>
-<h1 id="cantera案例分析"><a href="#cantera案例分析" class="headerlink" title="cantera案例分析"></a>cantera案例分析</h1>]]></content>
-      <tags>
-        <tag>cantera</tag>
-        <tag>实用手册</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>DetChem实用手册</title>
     <url>/2022/04/03/DetChem%E5%AE%9E%E7%94%A8%E6%89%8B%E5%86%8C/</url>
     <content><![CDATA[<h1 id="参数设置要点"><a href="#参数设置要点" class="headerlink" title="参数设置要点"></a>参数设置要点</h1><h2 id="TROE表述"><a href="#TROE表述" class="headerlink" title="TROE表述"></a>TROE表述</h2><p>机理文件中的速率方程不仅仅可以用常规阿累尼乌斯公式，也可以使用TROE表达方法。<br>详见：manual2.8 P29</p>
@@ -96,6 +81,36 @@
       </tags>
   </entry>
   <entry>
+    <title>Cantera实用手册</title>
+    <url>/2022/05/05/Cantera%E5%AE%9E%E7%94%A8%E6%89%8B%E5%86%8C/</url>
+    <content><![CDATA[<blockquote>
+<p>Cantera is an open-source suite of tools for problems involving chemical kinetics, thermodynamics, and transport processes.</p>
+</blockquote>
+<p>cantera提供了多种语言的接口，支持包括C++、MATLAB和python等语言在内的主流语法。其中以MATLAB和python用户居多。本人主要基于python语法进行cantera的有关开发。</p>
+<h1 id="为什么选择cantera？"><a href="#为什么选择cantera？" class="headerlink" title="为什么选择cantera？"></a>为什么选择cantera？</h1><p><strong>开源</strong>！<strong>免费</strong>！作为开源的资源库，cantera提供了基本的热力学、动力学以及反应器的类，我们可以在其基础上开发符合自己需求的模型，满足我们<strong>独特的需求</strong>。相对的，诸如chemkin这类封装完整的<strong>付费</strong>软件，用户自主修改的自由度几乎为零（当然，大部分情况下，该软件已经很成熟和稳定，不需要额外修改）。</p>
+<p>对于非均相的体系，目前（截止2022年5月）没有比较成熟的模拟软件，尽管有KIT-Olaf团队的DetChem这类开发许久（20世纪90年代开始）的封装程序，但是仍然不成熟，在微分方程求解和反应器模拟中仍然有很多不足。cantera恰恰可以提供一个用户自己开发的途径。</p>
+<h1 id="cantera案例分析"><a href="#cantera案例分析" class="headerlink" title="cantera案例分析"></a>cantera案例分析</h1>]]></content>
+      <tags>
+        <tag>实用手册</tag>
+        <tag>cantera</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>常用公式测试</title>
+    <url>/2022/04/03/%E5%B8%B8%E7%94%A8%E5%85%AC%E5%BC%8F%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<p>常用公式测试</p>
+<ul>
+<li><p>数学公式</p>
+<p>$A_1^2+B_2^2&#x3D;C_3^2$</p>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>tips</tag>
+        <tag>测试</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>win10环境下的VMware+Ubuntu虚拟机配置</title>
     <url>/2022/04/05/win10%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84VMware-Ubuntu%E8%99%9A%E6%8B%9F%E6%9C%BA%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<h1 id="软件安装指南："><a href="#软件安装指南：" class="headerlink" title="软件安装指南："></a>软件安装指南：</h1><p>参照公众号指南：<a href="https://mp.weixin.qq.com/s/MKkob7X-yqKxrg2P8qp8lw">Vm虚拟机安装Linux系统教程</a></p>
@@ -142,21 +157,6 @@
 ]]></content>
       <tags>
         <tag>tips</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>常用公式测试</title>
-    <url>/2022/04/03/%E5%B8%B8%E7%94%A8%E5%85%AC%E5%BC%8F%E6%B5%8B%E8%AF%95/</url>
-    <content><![CDATA[<p>常用公式测试</p>
-<ul>
-<li><p>数学公式</p>
-<p>$A_1^2+B_2^2&#x3D;C_3^2$</p>
-</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>tips</tag>
-        <tag>测试</tag>
       </tags>
   </entry>
   <entry>
